@@ -22,7 +22,7 @@ const Service = ({ title, index, icon }) => {
 const About = () => {
   return (
     <div
-      className={`${styles.paddingX} flex flex-col items-center justify-center mb-[200px]`}
+      className={`${styles.paddingX} flex flex-col items-center justify-center mb-[200px] pt-[100px]`}
     >
       <div className="flex flex-col items-center mb-5">
         <p className={`${styles.sectionSubText}`}>Introduction</p>

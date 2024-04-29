@@ -10,7 +10,6 @@ import { styles } from "../style";
 import { experiences } from "../constants";
 // import { SectionWrapper } from "../hoc";
 
-
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
@@ -57,7 +56,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <div className={`${styles.paddingX} mx-auto`} id="#work">
       <p className={`${styles.sectionSubText} text-center`}>
         What I have done so far
       </p>
@@ -75,7 +74,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -56,7 +56,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <div className={`${styles.paddingX} mx-auto`} id="#work">
+    <div className={`${styles.paddingX} mx-auto pt-[100px]`} id="work">
       <p className={`${styles.sectionSubText} text-center`}>
         What I have done so far
       </p>

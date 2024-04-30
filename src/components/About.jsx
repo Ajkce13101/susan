@@ -22,6 +22,7 @@ const Service = ({ title, index, icon }) => {
 const About = () => {
   return (
     <div
+      id="about"
       className={`${styles.paddingX} flex flex-col items-center justify-center mb-[200px] pt-[100px]`}
     >
       <div className="flex flex-col items-center mb-5">

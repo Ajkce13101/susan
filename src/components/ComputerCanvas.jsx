@@ -29,8 +29,8 @@ const Computer = ({ isMobile }) => {
       <pointLight intensity={130} position={[4, 10, 1]} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.7 : 0.6}
-        position={isMobile ? [0, -3, -2.2] : [0, 1, -1.5]}
+        scale={isMobile ? 0.31 : 0.6}
+        position={isMobile ? [0, -3, -0.5] : [0, -3.25, -1.5]}
         rotation={[0, -0.2, -0.3]}
         castShadow
         receiveShadow
@@ -40,6 +40,22 @@ const Computer = ({ isMobile }) => {
 };
 
 const ComputerCanvas = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width : 500px)");
+    setIsMobile(mediaQuery.matches);
+
+    const handleMediaQueryChange = (e) => {
+      setIsMobile(e.matches);
+    };
+
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
   return (
     <Canvas
       frameloop="demand"
@@ -53,7 +69,7 @@ const ComputerCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         ></OrbitControls>
-        <Computer></Computer>
+        <Computer isMobile={isMobile}></Computer>
       </Suspense>
     </Canvas>
   );

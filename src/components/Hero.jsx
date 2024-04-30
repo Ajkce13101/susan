@@ -5,6 +5,7 @@ import { gsap } from "gsap/gsap-core";
 import { useGSAP } from "@gsap/react";
 
 import { lottie } from "../assets";
+import ComputerCanvas from "./ComputerCanvas";
 
 const Hero = () => {
   useGSAP(() => {
@@ -15,7 +16,7 @@ const Hero = () => {
 
   return (
     <section className={` ${styles.paddingX}   max-w-7xl mx-auto h-[100vh] `}>
-      <div className="flex flex-row items-center gap-5 h-full justify-center">
+      <div className="flex flex-row items-center gap-5  justify-center mt-10">
         <div className="flex gap-5 items-center h-full justify-center flex-1">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
@@ -35,23 +36,23 @@ const Hero = () => {
               I develop 3D visuals, user <br className="sm:block hidden" />{" "}
               interface and web applications
             </p>
-            <p
+            {/* <p
               id="hero"
               className="mt-10 max-w-[80%] opacity-0 translate-x-[-200px]"
             >
-              {" "}
+          
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
               dignissimos itaque eum minima libero voluptatibus expedita labore,
               consectetur quod, ducimus voluptas odio perferendis dicta dolorem
               incidunt unde? Velit, possimus magni!
-            </p>
-            <div id="typeanimation" className="hidden"></div>
+            </p> */}
           </div>
         </div>
-        <div id="lottie" className="">
+        {/* <div id="lottie" className="">
           <Lottie animationData={lottie}></Lottie>
-        </div>
+        </div> */}
       </div>
+      <ComputerCanvas></ComputerCanvas>
     </section>
   );
 };

@@ -12,6 +12,8 @@
   "dependencies": {
     "@gsap/react": "^2.1.1",
     "@lottiefiles/lottie-player": "^2.0.4",
+    "@react-three/drei": "^9.105.5",
+    "@react-three/fiber": "^8.16.2",
     "framer-motion": "^11.1.7",
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
@@ -20,7 +22,8 @@
     "react-parallax-tilt": "^1.7.223",
     "react-router-dom": "^6.23.0",
     "react-type-animation": "^3.2.0",
-    "react-vertical-timeline-component": "^3.6.0"
+    "react-vertical-timeline-component": "^3.6.0",
+    "three": "^0.164.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

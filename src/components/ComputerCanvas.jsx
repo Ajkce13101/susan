@@ -31,7 +31,7 @@ const Computer = ({ isMobile }) => {
         object={computer.scene}
         scale={isMobile ? 0.7 : 0.6}
         position={isMobile ? [0, -3, -2.2] : [0, 1, -1.5]}
-        rotation={[-0.01, -0.2, -0.3]}
+        rotation={[0, -0.2, -0.3]}
         castShadow
         receiveShadow
       ></primitive>
@@ -47,13 +47,14 @@ const ComputerCanvas = () => {
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
-      <Suspense fallback={<CanvasLoader></CanvasLoader>}></Suspense>
-      <OrbitControls
-        enableZoom={false}
-        maxPolarAngle={Math.PI / 2}
-        minPolarAngle={Math.PI / 2}
-      ></OrbitControls>
-      <Computer></Computer>
+      <Suspense fallback={<CanvasLoader></CanvasLoader>}>
+        <OrbitControls
+          enableZoom={false}
+          maxPolarAngle={Math.PI / 2}
+          minPolarAngle={Math.PI / 2}
+        ></OrbitControls>
+        <Computer></Computer>
+      </Suspense>
     </Canvas>
   );
 };

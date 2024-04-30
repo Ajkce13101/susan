@@ -16,11 +16,11 @@ const Hero = () => {
 
   return (
     <section className={` ${styles.paddingX}   max-w-7xl mx-auto h-[100vh] `}>
-      <div className="flex flex-row items-center gap-5  justify-center mt-10">
+      <div className="flex flex-row items-center gap-5  justify-center pt-[115px] mt-10">
         <div className="flex gap-5 items-center h-full justify-center flex-1">
           <div className="flex flex-col justify-center items-center mt-5">
             <div className="w-5 h-5 rounded-full bg-[#915eff]"></div>
-            <div className="w-1 sm:h-96 h-40 violet-gradient"></div>
+            <div className="w-1 sm:h-[280px] h-40 violet-gradient"></div>
           </div>
           <div>
             <h1
@@ -53,6 +53,8 @@ const Hero = () => {
         </div> */}
       </div>
       <ComputerCanvas></ComputerCanvas>
+
+      <div className="absolute"></div>
     </section>
   );
 };

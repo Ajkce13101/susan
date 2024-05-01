@@ -8,7 +8,7 @@ const Tech = () => {
         What I expertise on
       </p>
       <h2 className={`${styles.sectionHeadText} text-center`}>
-       Tech Stack
+        Checking email address
       </h2>
     </div>
   );

@@ -10,12 +10,20 @@ const Computer = ({ isMobile }) => {
   // const computer = useLoader(GLTFLoader, "./desktop_pc/scene.gltf");
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
+  
   return (
     <mesh>
-      <ambientLight intensity={0.2}></ambientLight>
-      <hemisphereLight intensity={1} groundColor="black" />
+      <ambientLight intensity={0.01}></ambientLight>
+      <hemisphereLight intensity={1.1} groundColor="black" />
+      <directionalLight
+        position={[0.1, 7, -6]}
+        intensity={1}
+        castShadow={true}
+        receiveShadow
+        
+      ></directionalLight>
       <spotLight
-        position={[0.1, -0.7, -0.4]}
+        position={[0, -0.7, -0.4]}
         angle={0.3}
         penumbra={3}
         intensity={1.8}
@@ -26,14 +34,14 @@ const Computer = ({ isMobile }) => {
         shadow-bias={-0.01}
         shadow-radius={7}
       />
-      <pointLight intensity={10} position={[4, 10, 1]} />
+      <pointLight intensity={11} position={[1, 1, 3]} />
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.31 : 0.6}
         position={isMobile ? [0, -2, -0.5] : [0, -3.25, -1]}
         rotation={[0, -0.2, -0.3]}
-        castShadow
-        receiveShadow
+        castShadow={true}
+        receiveShadow={true}
       ></primitive>
     </mesh>
   );

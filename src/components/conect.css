@@ -1,0 +1,112 @@
+.connect-section {
+  color: black;
+  margin-top: 50px;
+}
+.connect-section .info {
+  width: 50%;
+}
+.connect-section .info h3 {
+  color: white;
+  font-weight: 900;
+  font-size: 23px;
+  margin-bottom: 10px;
+}
+.connect-section .form {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+.connect-section .form .form-content {
+  height: auto;
+  width: 90%;
+  box-shadow: 0px 0px 9px 5px rgba(10, 10, 10, 0.3);
+  border-radius: 15px;
+  padding: 35px;
+}
+.connect-section .form .form-content .form-section {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.connect-section .form .form-content .form-section span {
+  color: red;
+}
+.connect-section .form .form-content .form-section label {
+  margin-bottom: 2px;
+}
+.connect-section .form .form-content .form-section input {
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.connect-section .form .form-content .form-section input:invalid {
+  border: 1px solid red;
+}
+.connect-section .form .form-content .form-section input:focus {
+  border: 1px solid blue;
+}
+.connect-section .form .form-content .form-section input ::-moz-placeholder {
+  color: gray;
+}
+.connect-section .form .form-content .form-section input ::placeholder {
+  color: gray;
+}
+.connect-section .form .form-content .form-section textarea {
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.connect-section .form .form-content .form-section textarea:invalid {
+  border: 1px solid red;
+}
+.connect-section .form .form-content .form-section textarea:focus {
+  border: 1px solid blue;
+}
+.connect-section .form .form-content .form-section textarea ::-moz-placeholder {
+  color: gray;
+}
+.connect-section .form .form-content .form-section textarea ::placeholder {
+  color: gray;
+}
+.connect-section img {
+  width: 90%;
+}
+
+@media (max-width: 862px) {
+  .connect-section {
+    flex-direction: column;
+  }
+  .connect-section .info {
+    width: 100%;
+  }
+  .connect-section .info img {
+    width: 90%;
+  }
+  .connect-section .form {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.btn {
+  padding: 15px 45px;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background-color: #4a506b;
+  color: white;
+}
+.btn-blue:hover {
+  background-color: #0d1225;
+  z-index: 3;
+}/*# sourceMappingURL=conect.css.map */

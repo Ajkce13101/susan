@@ -6,7 +6,7 @@ import { Tooltip } from "react-tooltip";
 
 const Tech = () => {
   return (
-    <div className={`${styles.paddingX} mx-auto pt-[100px]`} id="work">
+    <div className={`${styles.padding} mx-auto pt-[100px]`} id="work">
       <p className={`${styles.sectionSubText} text-center`}>
         What I expertise on
       </p>

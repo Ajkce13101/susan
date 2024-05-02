@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+  :root {
+      --rt-transition-show-delay: 0.15s;
+      --rt-transition-closing-delay: 0.15s;
+    }
+
+      
+
 * {
   margin: 0;
   padding: 0;

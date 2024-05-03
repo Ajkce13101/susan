@@ -3,6 +3,7 @@ import { styles } from "../style";
 import { BallCanvas } from "./canvas";
 import { technologies } from "../constants";
 import { Tooltip } from "react-tooltip";
+import "./ball.css";
 
 const Tech = () => {
   return (
@@ -26,8 +27,10 @@ const Tech = () => {
               data-tooltip-content={tech.name}
               data-tooltip-variant="info"
             >
-              <div className="w-28 h-28 " key={tech.name}>
-                <BallCanvas icon={tech.icon}></BallCanvas>
+              <div className="state">
+                <div className="w-20 h-20  rounded-full ball " key={tech.name}>
+                  <img src={tech.icon} className="p-4 z-10" alt="" />
+                </div>
               </div>
             </a>
           );

@@ -1,0 +1,80 @@
+ .header-social {
+  
+   
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     padding: 10px 5px;
+     gap: 30px
+ 
+
+ }
+
+ .header-social li a {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     font-size: 18px;
+     text-align: center;
+     padding: 10px 10px;
+     transition: all 0.1s;
+     margin: 5px 0;
+ }
+
+ 
+
+ .rounded-circle {
+     width: 2.375rem;
+     height: 2.375rem;
+
+     border-radius: 50% !important;
+     align-items: center;
+     text-align: center;
+
+     
+ }
+ .rounded-circle:hover{
+    transform: scale(1.07);
+        
+ }
+
+ .facebook-link {
+     color: #fff;
+     background-color: #3b5999;
+     border-color: #3b5999;
+ }
+
+ .instagram-link {
+     color: #fff;
+     background-color: #e4405f;
+     border-color: #e4405f;
+ }
+
+ .github-link {
+     color: #fff;
+     background-color: #222;
+     border-color: #222;
+ }
+
+ .linkedIn-link {
+     color: #fff;
+     background-color: #1da1f2;
+     border-color: #1da1f2;
+ }
+
+ .youtube-link {
+
+
+
+     color: white;
+     background-color: #cd201f;
+
+
+ }
+
+ .twitter-link {
+     color: #fff;
+     background-color: #1da1f2;
+     border-color: #1da1f2;
+     box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+ }

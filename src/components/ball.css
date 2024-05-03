@@ -5,7 +5,7 @@
     margin: 0;
     border-radius: 50%;
     position: relative;
-    background: radial-gradient(circle at 50% 120%, #000003, #c3c2d4 80%, #ffffff 100%);
+    background: radial-gradient(circle at 50% 120%, #020416, #c3c2d4 80%, #ffffff 100%);
 }
 
 .ball:before {

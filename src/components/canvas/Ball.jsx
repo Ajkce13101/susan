@@ -7,9 +7,6 @@ import {
   Preload,
   useTexture,
 } from "@react-three/drei";
-import { Tooltip } from "react-tooltip";
-
-import CanvasLoader from "../Loader";
 
 const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
@@ -43,8 +40,6 @@ const BallCanvas = ({ icon }) => {
     <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
       <OrbitControls enableZoom={false} />
       <Ball imgUrl={icon} />
-
-      <Preload all />
     </Canvas>
   );
 };

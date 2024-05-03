@@ -6,7 +6,7 @@ import { Tooltip } from "react-tooltip";
 
 const Tech = () => {
   return (
-    <div className={`${styles.padding} mx-auto pt-[100px]`} id="work">
+    <div className={`${styles.paddingX} mx-auto pt-[100px]`} id="work">
       <p className={`${styles.sectionSubText} text-center`}>
         What I expertise on
       </p>
@@ -15,7 +15,10 @@ const Tech = () => {
       </h2>
 
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
-        <Tooltip id="my-tooltip" />
+        <Tooltip
+          id="my-tooltip"
+          style={{ backgroundColor: "white", color: "black" }}
+        />
         {technologies.map((tech) => {
           return (
             <a

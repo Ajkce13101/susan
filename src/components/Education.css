@@ -1,0 +1,97 @@
+.education-section {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.education-section .main-title {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.education-section .container {
+  position: relative;
+  margin-bottom: 150px;
+}
+.education-section .container .content-image__path--3,
+.education-section .container .content-image__path--2 {
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  bottom: -150px;
+}
+.education-section .container .empty-row,
+.education-section .container .educational-qualification {
+  flex: 0 0 50%;
+  max-width: 100%;
+}
+.education-section .container .educational-qualification {
+  padding: 25px;
+}
+.education-section .container .educational-qualification .content {
+  width: auto;
+  background-color: white;
+  padding: 20px 25px;
+  color: #050816;
+  border-radius: 20px;
+}
+.education-section .container .educational-qualification .content .qualification {
+  font-size: 22px;
+  font-weight: 700;
+  color: #0426bd;
+}
+.education-section .container .educational-qualification .content .button {
+  outline: none;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: rgb(255, 187, 0);
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.education-section .container .educational-qualification .content span {
+  display: block;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--dark);
+}
+.education-section .container .educational-qualification .content .college {
+  color: var(--gray);
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+.education-section .container .educational-qualification .content .skills h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.education-section .container .educational-qualification .content .skills li {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444953;
+}
+
+@media screen and (max-width: 1200px) {
+  .education-section .container .empty-row {
+    flex: 0 0 40%;
+  }
+  .education-section .container .educational-qualification {
+    flex: 0 0 60%;
+  }
+}
+@media (max-width: 1000px) {
+  .education-section .container .empty-row {
+    flex: 0 0 20%;
+  }
+  .education-section .container .educational-qualification {
+    flex: 0 0 80%;
+  }
+}
+@media (max-width: 862px) {
+  .education-section .container .empty-row {
+    display: none;
+  }
+  .education-section .container .educational-qualification {
+    flex: 0 0 100%;
+  }
+}/*# sourceMappingURL=Education.css.map */

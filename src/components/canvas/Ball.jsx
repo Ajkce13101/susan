@@ -13,7 +13,7 @@ const Ball = (props) => {
 
   return (
     <Float distance={0.5} speed={1}>
-      <mesh castShadow receiveShadow scale={2.3}>
+      <mesh scale={2.3}>
         <icosahedronGeometry args={[1, 1]} />
         <meshStandardMaterial
           color="#fff8eb"
@@ -33,7 +33,7 @@ const Ball = (props) => {
 
 const BallCanvas = ({ icon }) => {
   return (
-    <Canvas frameloop="always" gl={{ preserveDrawingBuffer: true }}>
+    <Canvas gl={{ preserveDrawingBuffer: true }}>
       <OrbitControls enableZoom={false} />
       <Ball imgUrl={icon} />
     </Canvas>

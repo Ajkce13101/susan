@@ -29,7 +29,7 @@
   padding-bottom: 20px;
 }
 .connect-section .form .form-content .form-section span {
-  color: red;
+  color: rgb(85, 5, 5);
 }
 .connect-section .form .form-content .form-section label {
   margin-bottom: 2px;
@@ -42,10 +42,10 @@
   font-size: 15px;
 }
 .connect-section .form .form-content .form-section input:invalid {
-  border: 1px solid red;
+  border: 1px solid rgb(85, 5, 5);
 }
 .connect-section .form .form-content .form-section input:focus {
-  border: 1px solid blue;
+  border: 1px solid rgb(21, 21, 61);
 }
 .connect-section .form .form-content .form-section input ::-moz-placeholder {
   color: gray;
@@ -61,10 +61,10 @@
   font-size: 15px;
 }
 .connect-section .form .form-content .form-section textarea:invalid {
-  border: 1px solid red;
+  border: 1px solid rgb(85, 5, 5);
 }
 .connect-section .form .form-content .form-section textarea:focus {
-  border: 1px solid blue;
+  border: 1px solid rgb(21, 21, 61);
 }
 .connect-section .form .form-content .form-section textarea ::-moz-placeholder {
   color: gray;

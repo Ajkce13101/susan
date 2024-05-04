@@ -94,13 +94,13 @@ const Contact = () => {
           <Earth></Earth>
         </div>
         <div className="form flex-1 ">
-          <div className="form-content bg-white bg-opacity-70 ">
+          <div className="form-content  bg-black-100 text-white ">
             <form onSubmit={handleSubmit(onSubmit)} ref={form}>
               {/* register your input into the hook by invoking the "register" function */}
-              <div className="form-section">
+              <div className="form-section ">
                 <label htmlFor="name">Name</label>
                 <input
-                  className="bg-white"
+                  className="bg-tertiary"
                   type="text"
                   name="name"
                   placeholder="Enter your name"
@@ -116,7 +116,7 @@ const Contact = () => {
                 <ToastContainer />
                 <label htmlFor="email">Email</label>
                 <input
-                  className="bg-white"
+                  className="bg-tertiary"
                   type="email"
                   name="email"
                   placeholder="Enter your email"
@@ -128,7 +128,7 @@ const Contact = () => {
               <div className="form-section">
                 <label htmlFor="message">Message</label>
                 <textarea
-                  className="bg-white"
+                  className="bg-tertiary"
                   name="message"
                   id=""
                   cols="30"
@@ -138,7 +138,11 @@ const Contact = () => {
                 ></textarea>
                 {errors.message && <span>Please enter your message</span>}
               </div>
-              <button type="submit" className="btn btn-blue" disabled={isSent}>
+              <button
+                type="submit"
+                className="btn bg-tertiary"
+                disabled={isSent}
+              >
                 {isLoading ? (
                   <ClipLoader size={15} color="white" />
                 ) : isSent ? (

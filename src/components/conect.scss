@@ -28,7 +28,7 @@
         flex-direction: column;
         padding-bottom: 20px;
         span {
-          color: red;
+          color: rgb(85, 5, 5);
         }
         label {
           margin-bottom: 2px;
@@ -41,11 +41,11 @@
           font-size: 15px;
 
           &:invalid {
-            border: 1px solid red;
+            border: 1px solid rgb(85, 5, 5);
           }
 
           &:focus {
-            border: 1px solid blue;
+            border: 1px solid rgb(21, 21, 61);
           }
 
           ::placeholder {
@@ -60,11 +60,11 @@
           font-size: 15px;
 
           &:invalid {
-            border: 1px solid red;
+            border: 1px solid rgb(85, 5, 5);
           }
 
           &:focus {
-            border: 1px solid blue;
+            border: 1px solid rgb(21, 21, 61);
           }
 
           ::placeholder {

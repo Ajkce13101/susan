@@ -321,7 +321,13 @@
     }
 
     .visible {
+        
         opacity: 1;
         display: flex;
+        background: red;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        right: 0;
     }
 }

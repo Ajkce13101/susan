@@ -1,7 +1,12 @@
 import React from "react";
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
+import {
+  OrbitControls,
+  Preload,
+  PresentationControls,
+  useGLTF,
+} from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
 import { useLoader } from "@react-three/fiber";
 import CanvasLoader from "./CanvasLoader";
@@ -10,7 +15,6 @@ const Computer = ({ isMobile }) => {
   // const computer = useLoader(GLTFLoader, "./desktop_pc/scene.gltf");
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
-  
   return (
     <mesh>
       <ambientLight intensity={0.01}></ambientLight>
@@ -20,7 +24,6 @@ const Computer = ({ isMobile }) => {
         intensity={1}
         castShadow={true}
         receiveShadow
-        
       ></directionalLight>
       <spotLight
         position={[0, -0.7, -0.4]}
@@ -35,11 +38,12 @@ const Computer = ({ isMobile }) => {
         shadow-radius={7}
       />
       <pointLight intensity={11} position={[1, 1, 3]} />
+
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.31 : 0.6}
-        position={isMobile ? [0, -2, -0.5] : [0, -3.25, -1]}
-        rotation={[0, -0.2, -0.3]}
+        scale={isMobile ? 0.5 : 1}
+        position={isMobile ? [0, -2, -0.8] : [0, -2, -1.4]}
+        rotation={[-0.01, -0.2, -0.3]}
         castShadow={true}
         receiveShadow={true}
       ></primitive>
@@ -72,12 +76,20 @@ const ComputerCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader></CanvasLoader>}>
-        <OrbitControls
-          enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
-        ></OrbitControls>
-        <Computer isMobile={isMobile}></Computer>
+        <PresentationControls
+          enabled={true} // the controls can be disabled by setting this to false
+          global={false} // Spin globally or by dragging the model
+          cursor={true} // Whether to toggle cursor style on drag
+          snap={true} // Snap-back to center (can also be a spring config)
+          speed={0.5} // Speed factor
+          zoom={1} // Zoom factor when half the polar-max is reached
+          rotation={[0, 0, 0]} // Default rotation
+          polar={[0, 0]} // Vertical limits
+          azimuth={[-Infinity, Infinity]} // Horizontal limits
+          config={{ mass: 0.5, tension: 100, friction: 10 }} // Spring config
+        >
+          <Computer isMobile={isMobile}></Computer>
+        </PresentationControls>
       </Suspense>
     </Canvas>
   );

@@ -17,9 +17,8 @@ function Footer() {
       >
         <div className=" ">
           <p className="copyright-text">
-            Created By{" "}
-            <span className="text-amber-500 font-semibold">Susan</span> | &copy;
-            2024 All rights reserved
+            Created By <span className="text-green font-semibold">Susan</span> |
+            &copy; 2024 All rights reserved
           </p>
           <p className="Footer__message">
             <strong className="Footer__bold">&lt;/&gt;</strong> with{" "}

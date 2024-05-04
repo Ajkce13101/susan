@@ -47,6 +47,13 @@
       #804dee 0%,
       rgba(60, 51, 80, 0) 100%);
 }
+.green-gradient {
+  background: #056905;
+  background: linear-gradient(-90deg, #056905 0%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(-90deg,
+      #056905 0%,
+      rgba(60, 51, 80, 0) 100%);
+}
 
 .green-pink-gradient {
   background: "#00cea8";

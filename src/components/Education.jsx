@@ -118,9 +118,16 @@ function Education() {
     >
       <div className="wrapper">
         <p className={`${styles.sectionSubText} text-center`}>Education</p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          My Educational QUalification
-        </h2>
+        <div className="flex flex-col items-center">
+          <h2 className={`${styles.sectionHeadText} text-center`}>
+            My Educational QUalification
+          </h2>
+          <ul className="dottedLine ">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
         <div className="container">
           <div className="row flex">
             <div className="educational-qualification" ref={edu2}>

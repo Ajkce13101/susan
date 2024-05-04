@@ -30,6 +30,7 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import susanLogo from './logo.png'
+import susanLogoBlue from './logo-blue.png'
 import lottie from './lottie.json'
 
 export {
@@ -62,5 +63,6 @@ export {
   jobit,
   tripguide,
   susanLogo,
-  lottie
+  lottie,
+  susanLogoBlue
 };

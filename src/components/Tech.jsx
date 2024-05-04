@@ -7,13 +7,20 @@ import "./ball.css";
 
 const Tech = () => {
   return (
-    <div className={`${styles.padding} mx-auto pt-[100px]`} id="work">
+    <div className={`${styles.padding} mx-auto pt-[100px]`} id="skills">
       <p className={`${styles.sectionSubText} text-center`}>
         What I expertise on
       </p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>
-        Tools & Technology
-      </h2>
+      <div className="flex flex-col items-center">
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Tools & Technology
+        </h2>
+        <ul className="dottedLine ">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 
       <div className="flex flex-row flex-wrap justify-center gap-10 mt-10">
         <Tooltip

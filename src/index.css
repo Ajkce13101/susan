@@ -223,3 +223,71 @@
 canvas {
   touch-action: none;
 }
+
+:root {
+  --blue: #007bff;
+  --white: white;
+  --gray: #646f87;
+
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #dc3545;
+
+  --yellow: #ffc107;
+  --green: #28a745;
+  --teal: #20c997;
+  --cyan: #17a2b8;
+  --white: #fff;
+  --gray: #646f87;
+  --gray-dark: #343a40;
+  --primary: #2453ff;
+  --secondary: #6c757d;
+  --success: #50f25d;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+  --light: #f8f9fa;
+  --dark: #030f16;
+  --c-black: #000;
+  --c-white: #fff;
+  --muted: #999;
+  --primary-muted: #f0f4ff;
+  --border: #e6e6e6;
+  --blueCard: #ddf8fe;
+  --purple: rgb(238 210 255);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --orangeCard: rgba(252, 166, 31, 0.45);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+ .dottedLine {
+   padding-top: 0px;
+ }
+
+ .dottedLine li {
+   display: inline-block;
+   background-color: #056905;
+   border-radius: 50px;
+   height: 3px;
+ }
+  .dottedLine li:nth-of-type(1) {
+     width: 64px;
+     margin-right: 3px;
+   }
+
+   .dottedLine li:nth-of-type(2) {
+     margin-right: 4px;
+     width: 10px;
+   }
+
+   .dottedLine li:nth-of-type(3) {
+     width: 7px;
+   }
+ 
+
+ ul {
+   list-style: none;
+ }

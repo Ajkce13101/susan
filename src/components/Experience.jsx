@@ -60,9 +60,16 @@ const Experience = () => {
       <p className={`${styles.sectionSubText} text-center`}>
         What I have done so far
       </p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>
-        Work Experience.
-      </h2>
+      <div className="flex flex-col items-center">
+        <h2 className={`${styles.sectionHeadText} text-center`}>
+          Work Experience
+        </h2>
+        <ul className="dottedLine ">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

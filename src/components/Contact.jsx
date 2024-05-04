@@ -70,8 +70,14 @@ const Contact = () => {
   return (
     <div className={`${styles.padding}  mx-auto relative z-0`}>
       <p className={`${styles.sectionSubText} text-center`}>Let's Connect</p>
-      <h2 className={`${styles.sectionHeadText} text-center`}>Contact Me</h2>
-
+      <div className="flex flex-col items-center">
+        <h2 className={`${styles.sectionHeadText} text-center`}>Contact Me</h2>
+        <ul className="dottedLine ">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div className="connect-section flex justify-center items-start pt-10">
         {/* <div className="info flex-1">
           <h3>Lets Talk</h3>

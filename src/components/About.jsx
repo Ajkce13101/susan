@@ -27,7 +27,14 @@ const About = () => {
     >
       <div className="flex flex-col items-center mb-5">
         <p className={`${styles.sectionSubText}`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText}`}>Overview.</h2>
+        <div className="flex flex-col items-center">
+          <h2 className={`${styles.sectionHeadText} text-center`}>OverView</h2>
+          <ul className="dottedLine ">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
       </div>
       <p className="text-secondary text-[17px] max-w-3xl leading-[30px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid

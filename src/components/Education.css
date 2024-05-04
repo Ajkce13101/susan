@@ -29,15 +29,15 @@
 }
 .education-section .container .educational-qualification .content {
   width: auto;
-  background-color: white;
+  background-color: #151030;
   padding: 20px 25px;
-  color: #050816;
+  color: white;
   border-radius: 20px;
 }
 .education-section .container .educational-qualification .content .qualification {
   font-size: 22px;
   font-weight: 700;
-  color: #0426bd;
+  color: white;
 }
 .education-section .container .educational-qualification .content .button {
   outline: none;
@@ -48,27 +48,28 @@
   padding: 2px 10px;
   border-radius: 4px;
   margin-bottom: 15px;
+  color: #151030;
 }
 .education-section .container .educational-qualification .content span {
   display: block;
   font-weight: 500;
   font-size: 15px;
-  color: var(--dark);
 }
 .education-section .container .educational-qualification .content .college {
-  color: var(--gray);
   margin-bottom: 15px;
   font-weight: 500;
+  color: #aaa6c3;
 }
 .education-section .container .educational-qualification .content .skills h3 {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 5px;
+  color: white;
 }
 .education-section .container .educational-qualification .content .skills li {
   font-size: 14px;
   font-weight: 600;
-  color: #444953;
+  color: #aaa6c3;
 }
 
 @media screen and (max-width: 1200px) {

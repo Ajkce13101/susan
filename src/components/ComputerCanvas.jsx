@@ -42,7 +42,7 @@ const Computer = ({ isMobile }) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.5 : 1}
-        position={isMobile ? [0, -2, -0.8] : [0, -2, -1.4]}
+        position={isMobile ? [0, 0, -0.8] : [0, -2, -1.4]}
         rotation={[-0.01, -0.2, -0.3]}
         castShadow={true}
         receiveShadow={true}
@@ -79,7 +79,6 @@ const ComputerCanvas = () => {
         <PresentationControls
           enabled={true} // the controls can be disabled by setting this to false
           global={false} // Spin globally or by dragging the model
-          cursor={true} // Whether to toggle cursor style on drag
           snap={true} // Snap-back to center (can also be a spring config)
           speed={0.5} // Speed factor
           zoom={1} // Zoom factor when half the polar-max is reached

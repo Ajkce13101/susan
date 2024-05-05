@@ -43,7 +43,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute sm:-bottom-1 h-[60vh] w-full   ">
+      <div className="absolute sm:-bottom-1 h-[60vh] w-full  bg-green max-sm:h-[30vh]">
         <ComputerCanvas />
       </div>
 

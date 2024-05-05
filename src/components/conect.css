@@ -29,7 +29,7 @@
   padding-bottom: 20px;
 }
 .connect-section .form .form-content .form-section span {
-  color: rgb(85, 5, 5);
+  color: rgb(219, 66, 66);
 }
 .connect-section .form .form-content .form-section label {
   margin-bottom: 2px;
@@ -42,10 +42,10 @@
   font-size: 15px;
 }
 .connect-section .form .form-content .form-section input:invalid {
-  border: 1px solid rgb(85, 5, 5);
+  border: 1px solid rgb(255, 203, 203);
 }
 .connect-section .form .form-content .form-section input:focus {
-  border: 1px solid rgb(21, 21, 61);
+  border: 2px solid rgb(22, 61, 21);
 }
 .connect-section .form .form-content .form-section input ::-moz-placeholder {
   color: gray;
@@ -61,10 +61,10 @@
   font-size: 15px;
 }
 .connect-section .form .form-content .form-section textarea:invalid {
-  border: 1px solid rgb(85, 5, 5);
+  border: 1px solid rgb(255, 203, 203);
 }
 .connect-section .form .form-content .form-section textarea:focus {
-  border: 1px solid rgb(21, 21, 61);
+  border: 2px solid rgb(22, 61, 21);
 }
 .connect-section .form .form-content .form-section textarea ::-moz-placeholder {
   color: gray;
@@ -100,13 +100,4 @@
   text-transform: capitalize;
   font-weight: 600;
   cursor: pointer;
-}
-
-.btn-blue {
-  background-color: #4a506b;
-  color: white;
-}
-.btn-blue:hover {
-  background-color: #0d1225;
-  z-index: 3;
 }/*# sourceMappingURL=conect.css.map */

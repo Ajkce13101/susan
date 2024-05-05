@@ -94,13 +94,13 @@ const Contact = () => {
           <Earth></Earth>
         </div>
         <div className="form flex-1 ">
-          <div className="form-content  bg-black-100 text-white ">
+          <div className="form-content  bg-primary-gradient text-white shadow-card">
             <form onSubmit={handleSubmit(onSubmit)} ref={form}>
               {/* register your input into the hook by invoking the "register" function */}
               <div className="form-section ">
                 <label htmlFor="name">Name</label>
                 <input
-                  className="bg-tertiary"
+                  className="bg-transparent"
                   type="text"
                   name="name"
                   placeholder="Enter your name"
@@ -116,7 +116,7 @@ const Contact = () => {
                 <ToastContainer />
                 <label htmlFor="email">Email</label>
                 <input
-                  className="bg-tertiary"
+                  className="bg-transparent"
                   type="email"
                   name="email"
                   placeholder="Enter your email"
@@ -128,7 +128,7 @@ const Contact = () => {
               <div className="form-section">
                 <label htmlFor="message">Message</label>
                 <textarea
-                  className="bg-tertiary"
+                  className="bg-transparent"
                   name="message"
                   id=""
                   cols="30"
@@ -140,7 +140,7 @@ const Contact = () => {
               </div>
               <button
                 type="submit"
-                className="btn bg-tertiary"
+                className="btn slidebtn slidebtnblue btn-blue"
                 disabled={isSent}
               >
                 {isLoading ? (

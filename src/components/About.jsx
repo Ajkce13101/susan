@@ -6,9 +6,9 @@ import Tilt from "react-parallax-tilt";
 
 const Service = ({ title, index, icon }) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
-      <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
-        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+    <Tilt className="xs:w-[250px] w-full ">
+      <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:black-gradient">
+        <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col hover:black-gradient">
           <img src={icon} className="w-16 h-16 object-contain"></img>
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}

@@ -13,11 +13,12 @@ import {
 } from "./components";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import "./app.scss";
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className=" z-0 bg-primary">
+      <div className="bg-primary z-0 ">
         <Navbar />
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Hero />

@@ -1,0 +1,58 @@
+.btn {
+  padding: 15px 45px;
+  border: none;
+  position: relative;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.btn-yellow {
+  background-color: rgb(245, 150, 7);
+  color: black;
+}
+.btn-yellow:hover {
+  color: white;
+  z-index: 3;
+}
+
+.green-btn {
+  background-color: blue;
+  color: white;
+}
+.green-btn:hover {
+  background-color: darkblue;
+}
+
+.slidebtn::before {
+  content: "";
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+  transition: transform 300ms ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+  z-index: -1;
+}
+
+.slidebtn:hover::before,
+.slidebtn:focus::before {
+  border-radius: 5px;
+  transform: scaleX(1);
+}
+
+.slidebtn {
+  transition: color 300ms ease-in-out;
+  z-index: 1;
+}
+
+.slidebtn:hover,
+.slidebtn:focus {
+  border-radius: 5px;
+  color: white;
+}/*# sourceMappingURL=app.css.map */

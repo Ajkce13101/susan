@@ -13,10 +13,10 @@ function Footer() {
       className={`  bg-black  py-10 mx-auto flex items-center justify-center`}
     >
       <div
-        className={`${styles.paddingX} flex justify-between w-full items-center max-w-[1400px]`}
+        className={`${styles.paddingX} flex justify-between w-full items-center max-w-[1400px] max-md:flex-col`}
       >
-        <div className=" ">
-          <p className="copyright-text">
+        <div className=" text-center max-sm:text-[14px] ">
+          <p className="copyright-text ">
             Created By <span className="text-green font-semibold">Susan</span> |
             &copy; 2024 All rights reserved
           </p>

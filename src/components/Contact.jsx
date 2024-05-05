@@ -90,7 +90,7 @@ const Contact = () => {
             <img src={connectImg} alt="" />
           </div>
         </div> */}
-        <div className="h-[500px] flex-1">
+        <div className="h-[500px] flex-1 max-sm:w-full ">
           <Earth></Earth>
         </div>
         <div className="form flex-1 ">

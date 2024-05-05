@@ -89,10 +89,15 @@
   }
 }
 @media (max-width: 862px) {
+  .education-section .container {
+    .row-width: 100%;
+  }
   .education-section .container .empty-row {
     display: none;
   }
   .education-section .container .educational-qualification {
+    padding-left: 0;
+    padding-right: 0;
     flex: 0 0 100%;
   }
 }/*# sourceMappingURL=Education.css.map */

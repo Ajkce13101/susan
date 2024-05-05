@@ -132,21 +132,23 @@ function Education() {
           <div className="row flex">
             <div className="educational-qualification" ref={edu2}>
               <div className="content">
-                <h3 className="qualification">
-                  Diploma of Information Technology
-                </h3>
-                <button className="button">2018 - 2019</button>
+                <h3 className="qualification">Undergraduate certificate</h3>
+                <button className="button">2020 - 2021</button>
                 <span>Educational Institute: </span>
-                <h4 className="college">
-                  Australian Institute of Business and Technology
-                </h4>
+                <h4 className="college">Melbourne Institute of Technology</h4>
                 <div className="skills">
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
-                    <li>Australian Workplace Health and Safety</li>
-                    <li>Business Communication Skills</li>
                     <li>
-                      Apply IP, ethics and privacy policies in ICT environments
+                      OSI model, TCP/IP stack, Ethernet and wireless networking.
+                    </li>
+                    <li>
+                      {" "}
+                      configuration, management, troubleshooting, and
+                      optimization of computer networks.
+                    </li>
+                    <li>
+                      Explores voice, video, and data transmission technologies
                     </li>
                   </ul>
                 </div>
@@ -181,19 +183,21 @@ function Education() {
             <div className="educational-qualification" ref={edu3}>
               <div className="content">
                 <h3 className="qualification">
-                  Advanced Diploma of Information Technology
+                  Bacheolor of Information Technology
                 </h3>
-                <button className="button">2019 - 2020</button>
+                <button className="button">2021 - 2022</button>
                 <span>Educational Institute: </span>
-                <h4 className="college">
-                  Australian Institute of Business and Technology
-                </h4>
+                <h4 className="college">King's Own Institute</h4>
                 <div className="skills">
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
-                    <li>Project Management Skills</li>
-                    <li>Design and implement integrated server solutions</li>
-                    <li>Database design and Management</li>
+                    <li></li>
+                    <li>Webpage Design and Development</li>
+                    <li>Computer Networking</li>
+                    <li>
+                      Understanding of various protocols and their roles in
+                      communication.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -210,54 +214,8 @@ function Education() {
           <div className="row flex">
             <div className="educational-qualification" ref={edu4}>
               <div className="content">
-                <h3 className="qualification">
-                  Bacheolor of Information Technology
-                </h3>
-                <button className="button">2020 - 2021</button>
-                <span>Educational Institute: </span>
-                <h4 className="college">Kent Institute</h4>
-                <div className="skills">
-                  <h3>Skills and Knowledge learnt</h3>
-                  <ul>
-                    <li>Data Structure and Algorithms</li>
-                    <li>Webpage Design and Development</li>
-                    <li>Object-Oriented Design and Programming</li>
-                    <li>Software Engineering</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="empty-row"></div>
-          </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="349.326"
-            height="165.403"
-            viewBox="0 0 349.326 165.403"
-            data-inject-url="https://linksome.me/s/app/themes/linksome/dist/images/path-landing-3.svg"
-            data-animation="draw-svg"
-            className="content-image__path content-image__path--3 injectable"
-          >
-            <path
-              d="M1276,1734s38,49.127,166.072,70.449,179.053,90.753,179.053,90.753"
-              transform="translate(-1273.895 -1731.896)"
-              fill="none"
-              stroke="#fff"
-              strokeLinecap="round"
-              strokeWidth="3"
-              strokeDasharray="10"
-              opacity="0.2"
-            ></path>
-          </svg>
-        </div>
-        <div className="container">
-          <div className="row flex ">
-            <div className="empty-row"></div>
-
-            <div className="educational-qualification" ref={edu5}>
-              <div className="content">
                 <h3 className="qualification">Professional Year Programe</h3>
-                <button className="button">2021 - 2022</button>
+                <button className="button">2023 - 2024</button>
                 <span>Educational Institute: </span>
                 <h4 className="college">Australian Computer Society (ACS)</h4>
                 <div className="skills">
@@ -270,6 +228,7 @@ function Education() {
                 </div>
               </div>
             </div>
+            <div className="empty-row"></div>
           </div>
         </div>
       </div>

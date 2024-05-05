@@ -90,7 +90,14 @@
     }
     .form {
       width: 100%;
-      justify-content: center;
+     padding-right: none;
+      padding-left: none;
+      
+      .form-content{
+        padding:20px;
+        width: 100%;
+      }
+      
     }
   }
 }

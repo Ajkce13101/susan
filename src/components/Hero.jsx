@@ -28,17 +28,17 @@ const Hero = () => {
             communication Technology
           </p>
 
-          <div className="mt-16 flex gap-10 max-md:gap-4 md:flex-row flex-col max-md:mt-10">
+          <div className="mt-16 flex gap-10 max-md:gap-4 md:flex-row flex-col max-md:mt-10 md:items-center">
             <button
               href="#contact"
-              className="btn btn-yellow slidebtn slidebtnyellow md:px-[12px] md:py-[35px] px-[5px] py-[10px] text-sm  max-md:w-[30vw] "
+              className="btn btn-yellow slidebtn slidebtnyellow md:px-[25px] md:py-[17px] px-[5px] py-[10px] text-sm  max-md:w-[30vw] "
             >
               <a href="#contact">Contact Me</a>
             </button>
 
             <span
               href=""
-              className="btn btn-blue slidebtn slidebtnblue md:px-[12px] md:py-[35px] px-[5px] py-[10px] text-sm  max-md:w-[40vw]"
+              className="btn btn-blue slidebtn slidebtnblue md:px-[25px] md:py-[17px] px-[5px] py-[10px] text-sm  max-md:w-[40vw]"
             >
               Download Resume
             </span>

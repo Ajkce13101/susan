@@ -88,7 +88,12 @@
   }
   .connect-section .form {
     width: 100%;
-    justify-content: center;
+    padding-right: none;
+    padding-left: none;
+  }
+  .connect-section .form .form-content {
+    padding: 20px;
+    width: 100%;
   }
 }
 .btn {

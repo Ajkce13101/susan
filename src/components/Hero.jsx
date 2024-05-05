@@ -46,11 +46,11 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute sm:-bottom-1 h-[60vh] w-full  bg-green max-sm:h-[30vh]">
+      <div className="absolute sm:bottom-1 bottom-[100px] h-[60vh] w-full   max-sm:h-[30vh]">
         <ComputerCanvas />
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center ">
+      <div className="absolute xs:bottom-10 bottom-14 w-full flex justify-center items-center ">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

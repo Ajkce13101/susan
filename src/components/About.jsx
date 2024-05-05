@@ -37,12 +37,17 @@ const About = () => {
         </div>
       </div>
       <p className="text-secondary text-[17px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-        voluptatibus recusandae repudiandae porro architecto! Nisi rerum soluta
-        saepe voluptatibus nihil, tempore atque. Ratione atque quia modi,
-        facilis unde recusandae alias, aliquam accusamus quisquam, repellendus
-        libero officiis temporibus dolores facere odit? Veritatis nihil aperiam
-        repellat necessitatibus quia minus saepe? Unde, asperiores.
+        As a Technical Support Officer, I bring a diverse skill set and a
+        passion for delivering exceptional service in the realm of information
+        and communication technology. With a solid foundation in ICT, I excel in
+        autonomously handling complex technical tasks and driving solutions. My
+        influence extends to effective communication and collaboration, ensuring
+        alignment with project objectives. Navigating intricate ICT landscapes
+        is second nature to me, thanks to my adeptness at handling multifaceted
+        challenges. Continuously expanding my knowledge, I stay updated on
+        emerging technologies and industry trends. I leverage strong business
+        acumen to translate technical insights into actionable strategies,
+        delivering
       </p>
 
       <div className="mt-20 flex flex-wrap gap-14 items-center justify-center">

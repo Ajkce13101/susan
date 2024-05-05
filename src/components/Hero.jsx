@@ -6,7 +6,10 @@ import Contact from "@mui/icons-material/ContactMail";
 
 const Hero = () => {
   return (
-    <section className={` w-full h-screen   pt-[140px] relative`} id="home">
+    <section
+      className={` w-full h-screen   pt-[140px] max-sm:pt-[100px] relative`}
+      id="home"
+    >
       <div
         className={`  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -47,7 +50,7 @@ const Hero = () => {
         <ComputerCanvas />
       </div>
 
-      <div className="absolute xs:bottom-10 bottom-5 w-full flex justify-center items-center ">
+      <div className="absolute xs:bottom-10 bottom-10 w-full flex justify-center items-center ">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

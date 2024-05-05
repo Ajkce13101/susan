@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../style";
 import ComputerCanvas from "./ComputerCanvas";
-import Contact from "@mui/icons-material/ContactMail";
+import { ParticlesContainer } from "./ParticlesContainer";
 
 const Hero = () => {
   return (
@@ -17,6 +16,8 @@ const Hero = () => {
           <div className="w-5 h-5 rounded-full bg-[#007bff]" />
           <div className="w-1 sm:h-80 h-40 green-gradient" />
         </div>
+        {/* Particle Container */}
+        <ParticlesContainer></ParticlesContainer>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>

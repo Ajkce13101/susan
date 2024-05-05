@@ -20,6 +20,7 @@
     "@react-three/drei": "^9.105.5",
     "@react-three/fiber": "^8.16.2",
     "@react-three/postprocessing": "^2.16.2",
+    "@tsparticles/react": "^3.0.0",
     "emailjs": "^4.0.3",
     "eruda": "^3.0.1",
     "framer-motion": "^11.1.7",
@@ -38,7 +39,8 @@
     "react-tooltip": "^5.26.4",
     "react-type-animation": "^3.2.0",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.164.1"
+    "three": "^0.164.1",
+    "tsparticles": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

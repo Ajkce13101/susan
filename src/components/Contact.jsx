@@ -68,7 +68,7 @@ const Contact = () => {
       );
   };
   return (
-    <div className={`${styles.padding}  mx-auto relative z-0`}>
+    <div className={`${styles.padding}  mx-auto relative z-0`} id="contact">
       <p className={`${styles.sectionSubText} text-center`}>Let's Connect</p>
       <div className="flex flex-col items-center">
         <h2 className={`${styles.sectionHeadText} text-center`}>Contact Me</h2>

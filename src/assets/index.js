@@ -4,7 +4,7 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
+import menu from "./menu.png";
 import close from "./close.svg";
 
 import css from "./tech/css.png";
@@ -31,6 +31,7 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import susanLogo from './logo.png'
 import susanLogoBlue from './logo-blue.png'
+import closeBlack from './closeBlack.png'
 import lottie from './lottie.json'
 
 export {
@@ -64,5 +65,6 @@ export {
   tripguide,
   susanLogo,
   lottie,
-  susanLogoBlue
+  susanLogoBlue,
+  closeBlack
 };

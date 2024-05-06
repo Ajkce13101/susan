@@ -9,13 +9,6 @@ import "./conect.scss";
 import { EarthCanvas } from "./canvas";
 import Earth from "./canvas/Earth";
 
-// .sendForm(
-//   "service_3ugx8dy",
-//   "template_53zr3xu",
-//   form.current,
-//   "z7_aN2EHdA9jSKVeW"
-// )
-
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
@@ -32,10 +25,10 @@ const Contact = () => {
     setIsLoading(true);
     return emailjs
       .sendForm(
-        "service_iioz6y9",
-        "template_3ylmmfi",
+        "service_3ugx8dy",
+        "template_53zr3xu",
         form.current,
-        "AZb8hKLsB7O86I2wP"
+        "z7_aN2EHdA9jSKVeW"
       )
       .then(
         (result) => {

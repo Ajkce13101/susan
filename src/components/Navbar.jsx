@@ -30,7 +30,7 @@ const Navbar = () => {
 
   return (
     <nav
-      id="home"
+     
       className={`${
         styles.paddingX
       } w-full flex items-center  fixed top-0 z-20 ${
@@ -61,9 +61,11 @@ const Navbar = () => {
           {navLinks.map((nav) => (
             <li
               key={nav.id}
-              className={`${
+              className={`
+              ${scrolled ? "text-tertiary" : "text-secondary"}
+              ${
                 active === nav.title ? "text-white" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+              }  text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>

@@ -6,7 +6,7 @@ import { ParticlesContainer } from "./ParticlesContainer";
 const Hero = () => {
   return (
     <section
-      className={` w-full h-screen   pt-[140px] max-sm:pt-[100px] relative`}
+      className={` w-full h-screen   pt-[140px] max-sm:pt-[100px] relative z-10`}
       id="home"
     >
       <div

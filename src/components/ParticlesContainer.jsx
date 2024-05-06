@@ -113,7 +113,7 @@ export const ParticlesContainer = () => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        className="w-full h-full absolute top-0 left-0 "
+        className="w-full h-full absolute top-0 left-0 -z-10"
       />
     );
   }

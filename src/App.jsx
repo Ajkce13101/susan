@@ -14,6 +14,7 @@ import {
 import Footer from "./components/Footer";
 import Education from "./components/Education";
 import "./app.scss";
+import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (

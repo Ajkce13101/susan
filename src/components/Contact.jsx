@@ -9,6 +9,13 @@ import "./conect.scss";
 import { EarthCanvas } from "./canvas";
 import Earth from "./canvas/Earth";
 
+// .sendForm(
+//   "service_3ugx8dy",
+//   "template_53zr3xu",
+//   form.current,
+//   "z7_aN2EHdA9jSKVeW"
+// )
+
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
@@ -25,10 +32,10 @@ const Contact = () => {
     setIsLoading(true);
     return emailjs
       .sendForm(
-        "service_3ugx8dy",
-        "template_53zr3xu",
+        "service_iioz6y9",
+        "template_3ylmmfi",
         form.current,
-        "WCKxRwr5krd7jaiC9USfd"
+        "AZb8hKLsB7O86I2wP"
       )
       .then(
         (result) => {
@@ -113,7 +120,7 @@ const Contact = () => {
 
               {/* include validation with required or other standard HTML validation rules */}
               <div className="form-section">
-                <ToastContainer />
+                <ToastContainer className="z-50 mt-16" />
                 <label htmlFor="email">Email</label>
                 <input
                   className="bg-transparent"

@@ -3,7 +3,8 @@ import React, { useEffect, useState } from "react";
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { susanLogo, susanLogoBlue, menu, closeBlack } from "../assets";
-import { Link } from "react-scroll";
+import { Link, animateScroll as scroll } from "react-scroll";
+import "./Navbar.scss";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -32,11 +33,11 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center  fixed top-0 z-20 ${
-        scrolled ? "bg-white py-2" : "bg-transparent py-5"
+      } w-full flex items-center  transition-all ease-in-out duration-1000 fixed top-0 z-20 ${
+        scrolled ? "bg-white py-5" : "bg-transparent py-5"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -58,17 +59,28 @@ const Navbar = () => {
 
         <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (
-            <li
-              key={nav.id}
-              className={`
+            <Link
+              activeClass="active"
+              to={nav.id}
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
+            >
+              <li
+                key={nav.id}
+                className={`
               ${scrolled ? "text-tertiary" : "text-secondary"}
               ${
                 active === nav.title ? "text-white" : "text-secondary"
-              }  text-[18px] font-medium cursor-pointer`}
-              onClick={() => setActive(nav.title)}
-            >
-              <a href={`#${nav.id}`}>{nav.title}</a>
-            </li>
+              }  text-[18px] font-medium cursor-pointer relative`}
+                onClick={() => setActive(nav.title)}
+              >
+                <a>
+                  {nav.title} <span></span>
+                </a>
+              </li>
+            </Link>
           ))}
         </ul>
 
@@ -107,11 +119,8 @@ const Navbar = () => {
                       setActive(nav.title);
                     }}
                   >
-                    <a
-                      className="w-full h-full text-center flex items-center justify-center"
-                      href={`#${nav.id}`}
-                    >
-                      {nav.title}
+                    <a className="w-full h-full text-center flex items-center justify-center relative">
+                      {nav.title} <span></span>
                     </a>
                   </li>
                 </Link>

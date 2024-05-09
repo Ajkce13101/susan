@@ -1,56 +1,7 @@
-.nav {
-  width: 100%;
-  align-items: center;
-  padding: 35px 25px;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  transition: all 0.4s ease-in-out;
-}
-.nav .wrapper {
-  height: 50px;
-}
-.nav .row {
-  height: 50px;
-}
-.nav .logo {
-  font-family: "Kaushan Script", cursive;
-  font-size: 45px;
-  color: white;
-  font-weight: 600;
-  text-transform: capitalize;
-  cursor: pointer;
-  transition: all 0.4s ease-in-out;
-}
-.nav .logo span {
-  color: var(--blue);
-}
-.nav_Right ul {
-  display: flex;
-  gap: 2rem;
-  position: relative;
-}
-.nav_Right ul li {
-  text-transform: capitalize;
-  position: relative;
-  padding: 9px 0;
-  cursor: pointer;
-}
-.nav_Right ul li a:hover > span {
-  width: 60%;
-  opacity: 1;
-  visibility: visible;
-}
-.nav_Right ul li a:hover > span::before {
-  width: 20%;
-}
-.nav_Right ul li a:hover > span::after {
-  width: 15%;
-}
-.nav_Right ul span {
+span {
   width: 0%;
   height: 2px;
-  background-color: var(--white);
+  background-color: #151030;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -59,209 +10,37 @@
   opacity: 0;
   transition: all 0.3s ease-out 0s;
 }
-.nav_Right ul span::before {
+span::before {
   position: absolute;
   content: "";
   width: 0;
   height: 2px;
-  background-color: var(--white);
+  background-color: #151030;
   left: 110%;
 }
-.nav_Right ul span::after {
+span::after {
   position: absolute;
   content: "";
   width: 0;
   height: 2px;
-  background-color: var(--white);
+  background-color: #151030;
   left: 140%;
 }
-.nav_Right ul .active a span {
+
+.active a span {
   width: 60%;
   opacity: 1;
   visibility: visible;
 }
-.nav_Right ul .active a span::before {
+
+.active a span::before {
   width: 20%;
   opacity: 1;
   visibility: visible;
 }
-.nav_Right ul .active a span::after {
+
+.active a span::after {
   width: 15%;
   opacity: 1;
   visibility: visible;
-}
-.nav .nav-container {
-  height: 36px;
-  width: 42px;
-  position: absolute;
-  top: 42px;
-  right: 20px;
-  display: none;
-}
-.nav .checkbox {
-  position: absolute;
-  display: block;
-  height: 36px;
-  width: 42px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-  background-color: red;
-  color: red;
-}
-.nav .hamburger-lines {
-  display: block;
-  height: 36px;
-  width: 42px;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--blue);
-  padding: 8px 10px;
-  border-radius: 5px;
-}
-.nav .hamburger-lines .line {
-  display: block;
-  height: 4px;
-  width: 100%;
-  border-radius: 10px;
-  background: var(--white);
-}
-.nav .hamburger-lines .line1 {
-  transform-origin: 0% 0%;
-  transition: transform 0.4s ease-in-out;
-}
-.nav .hamburger-lines .line2 {
-  transition: transform 0.2s ease-in-out;
-}
-.nav .hamburger-lines .line3 {
-  transform-origin: 0% 100%;
-  transition: transform 0.4s ease-in-out;
-}
-.nav .nav-container input[type=checkbox]:checked ~ .menu-items {
-  transform: translateX(0);
-}
-.nav .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line1 {
-  transform: rotate(45deg) scaleX(1.3) translateY(-2px);
-}
-.nav .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line2 {
-  transform: scaleY(0);
-}
-.nav .nav-container input[type=checkbox]:checked ~ .hamburger-lines .line3 {
-  transform: rotate(-45deg) scaleX(1.3) translateY(2px);
-}
-.nav .nav-container input[type=checkbox]:checked ~ .logo {
-  display: none;
-}
-
-.stickingNav {
-  background-color: white;
-  color: black;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-  padding: 10px 25px;
-  transition: all 0.3s ease-in;
-  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
-}
-.stickingNav .logo {
-  color: black;
-  font-size: 30px;
-  transition: all 0.4s ease-in-out;
-}
-.stickingNav ul li a span,
-.stickingNav ul li a span::after,
-.stickingNav ul li a span::before {
-  background-color: black;
-}
-.stickingNav .checkbox {
-  position: absolute;
-  display: block;
-  height: 52px;
-  width: 52px;
-  top: 12px;
-  right: 20px;
-  z-index: 5;
-  opacity: 0;
-  cursor: pointer;
-}
-.stickingNav .nav-container {
-  top: 12px;
-  right: 20px;
-  transition: all 0.3s ease-in;
-}
-.stickingNav .hamburger-lines {
-  display: block;
-  height: 36px;
-  width: 42px;
-  position: absolute;
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: var(--white);
-  padding: 8px 10px;
-  border-radius: 5px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
-.stickingNav .hamburger-lines .line {
-  background-color: var(--blue);
-}
-
-@media (max-width: 962px) {
-  .nav_Right {
-    transform: translateX(-150000px);
-  }
-  .body-fixed {
-    overflow: hidden;
-  }
-  .nav {
-    height: 70px;
-    transition: all 0.3s ease-in-out;
-  }
-  .nav .nav-container {
-    display: block;
-  }
-  .responsive {
-    background-color: white;
-    height: 450px;
-    transition: all 0.3s ease-in-out;
-  }
-  .responsive .logo {
-    color: black;
-  }
-  .responsive .icons {
-    transform: translateX(0);
-  }
-  .responsive .nav_Right {
-    transform: translateX(0);
-  }
-  .stickingNav {
-    height: 60px;
-    transition: all 0.3s ease-in;
-  }
-  .sticky-responsive {
-    height: 500px;
-    transition: all 0.3s ease-in;
-  }
-  .menu {
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;
-    color: var(--dark);
-    font-weight: 700;
-    display: none;
-    opacity: 0;
-  }
-  .visible {
-    opacity: 1;
-    display: flex;
-    background: red;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
 }/*# sourceMappingURL=Navbar.css.map */

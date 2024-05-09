@@ -46,15 +46,15 @@ const Computer = ({ isMobile }) => {
         colorStop={0.4}
         opacity={1}
         fog={false}
-        position={[0, -2, -0.2]}
-        scale={10}
+        position={[0, -2.5, -0.2]}
+        scale={8}
         // Reacts to fog (default=false)
       />
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.9 : 3}
-        position={isMobile ? [0, -2, -1.3] : [2, -1, -1]}
+        scale={isMobile ? 0.9 : 2.4}
+        position={isMobile ? [0, -2, -1.3] : [2, -2, -1]}
         rotation={[0, 2, 0]}
         castShadow={true}
         receiveShadow={true}

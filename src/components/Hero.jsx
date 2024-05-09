@@ -6,7 +6,7 @@ import { ParticlesContainer } from "./ParticlesContainer";
 const Hero = () => {
   return (
     <section
-      className={` w-full h-screen   pt-[140px] max-sm:pt-[100px] relative z-10`}
+      className={` w-full h-screen  md:pt-[40px] pt-[40px]  relative z-10`}
       id="home"
     >
       <div
@@ -45,7 +45,7 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <div className="flex-1  h-full max-md:hidden">
+        <div className="flex-1  h-full max-md:hidden  w-full">
           <ComputerCanvas />
         </div>
       </div>

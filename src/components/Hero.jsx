@@ -19,7 +19,7 @@ const Hero = () => {
         {/* Particle Container */}
         <ParticlesContainer></ParticlesContainer>
 
-        <div className="flex-1 bg-red">
+        <div className="flex-1 h-full flex  flex-col justify-center">
           <h1 className={`${styles.heroHeadText} text-white`}>
             Hi, I'm <span className="blue-text-gradient">Susan Khanal</span>
           </h1>
@@ -45,7 +45,7 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <div className="flex-1  h-full">
+        <div className="flex-1  h-full max-md:hidden">
           <ComputerCanvas />
         </div>
       </div>

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 
 import { styles } from "../style";
 import { navLinks } from "../constants";
 import { susanLogo, susanLogoBlue, menu, closeBlack } from "../assets";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -89,23 +89,32 @@ const Navbar = () => {
           >
             <ul className="list-none flex justify-center items-center flex-1 flex-col  w-full text-center gap-12">
               {navLinks.map((nav) => (
-                <li
-                  key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center  ${
-                    active === nav.title ? "text-black" : "text-tertiary"
-                  }`}
-                  onClick={() => {
-                    setToggle(!toggle);
-                    setActive(nav.title);
-                  }}
+                <Link
+                  activeClass="active"
+                  to={nav.id}
+                  spy={true}
+                  smooth={true}
+                  offset={10}
+                  duration={500}
                 >
-                  <a
-                    className="w-full h-full text-center flex items-center justify-center"
-                    href={`#${nav.id}`}
+                  <li
+                    key={nav.id}
+                    className={`font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center  ${
+                      active === nav.title ? "text-black" : "text-tertiary"
+                    }`}
+                    onClick={() => {
+                      setToggle(!toggle);
+                      setActive(nav.title);
+                    }}
                   >
-                    {nav.title}
-                  </a>
-                </li>
+                    <a
+                      className="w-full h-full text-center flex items-center justify-center"
+                      href={`#${nav.id}`}
+                    >
+                      {nav.title}
+                    </a>
+                  </li>
+                </Link>
               ))}
             </ul>
           </div>

@@ -3,14 +3,11 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
-  OrbitControls,
-  Preload,
   PresentationControls,
   Shadow,
   useGLTF,
 } from "@react-three/drei";
-import { GLTFLoader } from "three/examples/jsm/Addons.js";
-import { useLoader } from "@react-three/fiber";
+
 import CanvasLoader from "./CanvasLoader";
 
 const Computer = ({ isMobile }) => {

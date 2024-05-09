@@ -30,7 +30,6 @@ const Navbar = () => {
 
   return (
     <nav
-     
       className={`${
         styles.paddingX
       } w-full flex items-center  fixed top-0 z-20 ${
@@ -57,7 +56,7 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -73,7 +72,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <div className="bg-white rounded-full p-1.5 z-20 shadow-lg shadow:primary">
             <img
               src={toggle ? closeBlack : menu}

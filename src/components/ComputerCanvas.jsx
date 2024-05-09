@@ -2,9 +2,11 @@ import React from "react";
 import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
+  Environment,
   OrbitControls,
   Preload,
   PresentationControls,
+  Shadow,
   useGLTF,
 } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/Addons.js";
@@ -13,7 +15,7 @@ import CanvasLoader from "./CanvasLoader";
 
 const Computer = ({ isMobile }) => {
   // const computer = useLoader(GLTFLoader, "./desktop_pc/scene.gltf");
-  const computer = useGLTF("./desktop_pc/scene.gltf");
+  const computer = useGLTF("./office/scene.gltf");
 
   return (
     <mesh>
@@ -38,12 +40,22 @@ const Computer = ({ isMobile }) => {
         shadow-radius={7}
       />
       <pointLight intensity={11} position={[1, 1, 3]} />
+      <Environment preset="city"></Environment>
+      <Shadow
+        color="black"
+        colorStop={0.4}
+        opacity={1}
+        fog={false}
+        position={[0, -2, -0.2]}
+        scale={10}
+        // Reacts to fog (default=false)
+      />
 
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.9 : 0.9}
-        position={isMobile ? [0, -2, -1.3] : [0, -2, -1.4]}
-        rotation={[-0.01, -0.2, -0.3]}
+        scale={isMobile ? 0.9 : 3}
+        position={isMobile ? [0, -2, -1.3] : [2, -1, -1]}
+        rotation={[0, 2, 0]}
         castShadow={true}
         receiveShadow={true}
       ></primitive>

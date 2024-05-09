@@ -23,7 +23,7 @@
     "@tsparticles/react": "^3.0.0",
     "emailjs": "^4.0.3",
     "eruda": "^3.0.1",
-    "framer-motion": "^11.1.7",
+    "framer-motion": "^11.1.9",
     "gsap": "^3.12.5",
     "leva": "^0.9.35",
     "lottie-react": "^2.4.0",

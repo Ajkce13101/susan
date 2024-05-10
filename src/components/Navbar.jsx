@@ -163,7 +163,7 @@ const Navbar = () => {
                       setActive(nav.title);
                     }}
                   >
-                    <a className="w-full h-full text-center flex items-center justify-center relative">
+                    <a className="w-full h-full text-center flex items-center justify-center relative font-semibold">
                       {nav.title} <span></span>
                     </a>
                   </motion.li>

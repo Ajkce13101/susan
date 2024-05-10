@@ -1,31 +1,61 @@
-import React from "react";
+import React, { useRef } from "react";
 import { styles } from "../style";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { services } from "../constants";
 import Tilt from "react-parallax-tilt";
+
+const variants = {
+  initial: {
+    x: -500,
+    y: 100,
+    opacity: 0,
+  },
+  animate: {
+    x: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const Service = ({ title, index, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full ">
-      <div className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:black-gradient">
+      <motion.div
+        variants={variants}
+        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:black-gradient"
+      >
         <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col hover:black-gradient">
           <img src={icon} className="w-16 h-16 object-contain"></img>
           <h3 className="text-white text-[20px] font-bold text-center">
             {title}
           </h3>
         </div>
-      </div>
+      </motion.div>
     </Tilt>
   );
 };
 
 const About = () => {
+  const ref = useRef();
+  const isInView = useInView(ref, { margin: "-200px" });
   return (
-    <div
+    <motion.div
+      ref={ref}
+      variants={variants}
+      initial="initial"
+      // whileInView="animate"
+      animate={isInView && "animate"}
       id="about"
       className={`${styles.paddingX} flex flex-col items-center justify-center mb-[200px] pt-[100px]`}
     >
-      <div className="flex flex-col items-center mb-5">
+      <motion.div
+        variants={variants}
+        className="flex flex-col items-center mb-5"
+      >
         <p className={`${styles.sectionSubText}`}>Introduction</p>
         <div className="flex flex-col items-center">
           <h2 className={`${styles.sectionHeadText} text-center`}>OverView</h2>
@@ -35,8 +65,11 @@ const About = () => {
             <li></li>
           </ul>
         </div>
-      </div>
-      <p className="text-secondary text-[17px] max-w-3xl leading-[30px]">
+      </motion.div>
+      <motion.p
+        variants={variants}
+        className="text-secondary text-[17px] max-w-3xl leading-[30px]"
+      >
         As a Technical Support Officer, I bring a diverse skill set and a
         passion for delivering exceptional service in the realm of information
         and communication technology. With a solid foundation in ICT, I excel in
@@ -48,14 +81,14 @@ const About = () => {
         emerging technologies and industry trends. I leverage strong business
         acumen to translate technical insights into actionable strategies,
         delivering
-      </p>
+      </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-14 items-center justify-center">
         {services.map((service, index) => (
           <Service key={service.title} index={index} {...service}></Service>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -31,7 +31,7 @@ const Loading = () => {
             <div class="pl__bar-r"></div>
           </div>
         </div>
-        <div className="loader--text font-bold text-3xl text-white"></div>
+        <div className="loader--text font-bold text-xl text-white"></div>
       </div>
     </div>
   );

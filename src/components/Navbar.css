@@ -1,4 +1,4 @@
-span {
+.nav .links span {
   width: 0%;
   height: 2px;
   background-color: #151030;
@@ -10,7 +10,7 @@ span {
   opacity: 0;
   transition: all 0.3s ease-out 0s;
 }
-span::before {
+.nav .links span::before {
   position: absolute;
   content: "";
   width: 0;
@@ -18,7 +18,7 @@ span::before {
   background-color: #151030;
   left: 110%;
 }
-span::after {
+.nav .links span::after {
   position: absolute;
   content: "";
   width: 0;
@@ -26,21 +26,28 @@ span::after {
   background-color: #151030;
   left: 140%;
 }
-
-.active a span {
+.nav .links .active a span {
   width: 60%;
   opacity: 1;
   visibility: visible;
 }
-
-.active a span::before {
+.nav .links .active a span::before {
   width: 20%;
   opacity: 1;
   visibility: visible;
 }
-
-.active a span::after {
+.nav .links .active a span::after {
   width: 15%;
   opacity: 1;
   visibility: visible;
+}
+
+.background {
+  position: absolute;
+  background: white;
+  height: 100vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
 }/*# sourceMappingURL=Navbar.css.map */

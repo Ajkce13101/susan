@@ -1,4 +1,8 @@
-span {
+.nav {
+    .links{
+
+    
+    span {
     width: 0%;
     height: 2px;
     background-color: #151030;
@@ -46,3 +50,21 @@ span {
     opacity: 1;
     visibility: visible;
 }
+}}
+
+.background{
+
+    position: absolute;
+    background: white;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+   
+   
+
+
+}
+
+

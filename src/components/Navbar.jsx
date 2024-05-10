@@ -47,7 +47,7 @@ const Navbar = () => {
 
   const variants = {
     open: {
-      clipPath: `circle(1000px at 80% 5.2%)`,
+      clipPath: `circle(1300px at 80% 5.2%)`,
       transition: {
         type: "spring",
         stiffness: 20,
@@ -148,14 +148,19 @@ const Navbar = () => {
         </motion.ul>
 
         <div className="md:hidden flex flex-1 justify-end items-center relative ">
-          <div className="bg-white rounded-full p-1.5 z-20 shadow-lg shadow:primary">
+          <motion.div
+            variants={navVariants}
+            initial="initial"
+            animate="animate"
+            className="bg-white rounded-full p-1.5 z-20 shadow-lg shadow:primary"
+          >
             <img
               src={toggle ? closeBlack : menu}
               alt="menu"
               className="w-[28px] h-[28px] object-contain  "
               onClick={() => setToggle(!toggle)}
             />
-          </div>
+          </motion.div>
 
           <motion.div
             animate={toggle ? "open" : "close"}

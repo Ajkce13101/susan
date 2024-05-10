@@ -3,6 +3,7 @@ import { Suspense, useEffect, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import {
   Environment,
+  Preload,
   PresentationControls,
   Shadow,
   useGLTF,
@@ -98,6 +99,7 @@ const ComputerCanvas = () => {
         >
           <Computer isMobile={isMobile}></Computer>
         </PresentationControls>
+        <Preload all></Preload>
       </Suspense>
     </Canvas>
   );

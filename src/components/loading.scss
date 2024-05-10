@@ -1,0 +1,338 @@
+$ease-in: cubic-bezier(0.33, 0, 0.67, 0);
+$ease-out: cubic-bezier(0.33, 1, 0.67, 1);
+
+
+:root {
+    --hue: 223;
+    --sat: 90%;
+    --bg: hsl(var(--hue), var(--sat), 90%);
+    --fg: hsl(var(--hue), var(--sat), 10%);
+    --bar-light-t: 60%;
+    --bar-light-l: 50%;
+    --bar-light-r: 40%;
+    --bar-a-hue: 223;
+    --bar-a-t: hsl(var(--bar-a-hue), var(--sat), var(--bar-light-t));
+    --bar-a-l: hsl(var(--bar-a-hue), var(--sat), var(--bar-light-l));
+    --bar-a-r: hsl(var(--bar-a-hue), var(--sat), var(--bar-light-r));
+    --bar-b-hue: 253;
+    --bar-b-t: hsl(var(--bar-b-hue), var(--sat), var(--bar-light-t));
+    --bar-b-l: hsl(var(--bar-b-hue), var(--sat), var(--bar-light-l));
+    --bar-b-r: hsl(var(--bar-b-hue), var(--sat), var(--bar-light-r));
+    --bar-c-hue: 283;
+    --bar-c-t: hsl(var(--bar-c-hue), var(--sat), var(--bar-light-t));
+    --bar-c-l: hsl(var(--bar-c-hue), var(--sat), var(--bar-light-l));
+    --bar-c-r: hsl(var(--bar-c-hue), var(--sat), var(--bar-light-r));
+    --bar-d-hue: 313;
+    --bar-d-t: hsl(var(--bar-d-hue), var(--sat), var(--bar-light-t));
+    --bar-d-l: hsl(var(--bar-d-hue), var(--sat), var(--bar-light-l));
+    --bar-d-r: hsl(var(--bar-d-hue), var(--sat), var(--bar-light-r));
+    --bar-shadow-op: 0.4;
+    --trans-dur: 0.3s;
+    font-size: calc(14px + (30 - 14) * (100vw - 280px) / (3840 - 280));
+}
+
+
+
+.pl {
+    $debug: false;
+    $dur: 2s;
+
+    width: 12em;
+    height: 12em;
+
+    &,
+    &__bars {
+        @if $debug ==true {
+            outline: 1px solid;
+        }
+
+        display: flex;
+    }
+
+    &__bars,
+    &__bar {
+        transform-style: preserve-3d;
+    }
+
+    &__bars {
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 8em;
+        height: 8em;
+        transform: translateY(2.75em) rotateX(60deg) rotateZ(-45deg);
+    }
+
+    &__bar {
+        position: relative;
+        width: 1em;
+        height: 1em;
+
+        &-t,
+        &-l,
+        &-r,
+        &-s {
+            animation: bounce-t $dur infinite;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform-origin: 0 0;
+        }
+
+        &-t {
+            top: 0;
+            transform: translateZ(1em);
+        }
+
+        &-l,
+        &-r,
+        &-s {
+            top: 100%;
+        }
+
+        &-l {
+            animation-name: bounce-l;
+            transform: rotateX(90deg) rotateY(-90deg);
+        }
+
+        &-r {
+            animation-name: bounce-r;
+            transform: rotateX(90deg);
+        }
+
+        &-s {
+            animation-name: bounce-s;
+            background-color: hsl(0, 0%, 0%);
+            box-shadow: 0 0 0.125em 0.125em hsl(0, 0%, 0%);
+            opacity: var(--bar-shadow-op);
+            left: 0.125em;
+            width: calc(100% - 0.25em);
+            height: calc(100% - 0.125em);
+            transition: opacity var(--trans-dur);
+        }
+
+        $bars: (
+            0: a,
+            1: b,
+            2: c,
+            3: d
+        );
+
+    @each $index, $bar in $bars {
+        $child: $index + 1;
+
+        &:nth-child(#{$child}) &-t,
+        &:nth-child(#{$child}) &-l,
+        &:nth-child(#{$child}) &-r,
+        &:nth-child(#{$child}) &-s {
+            animation-delay: $dur * 0.05 * $index;
+        }
+
+        &:nth-child(#{$child}) &-t {
+            background-color: var(--bar-#{$bar}-t);
+        }
+
+        &:nth-child(#{$child}) &-l {
+            background-color: var(--bar-#{$bar}-l);
+        }
+
+        &:nth-child(#{$child}) &-r {
+            background-color: var(--bar-#{$bar}-r);
+        }
+    }
+}
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: hsl(var(--hue), var(--sat), 20%);
+        --fg: hsl(var(--hue), var(--sat), 90%);
+        --bar-shadow-op: 0.8;
+    }
+}
+
+/* Animation */
+@keyframes bounce-t {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: $ease-out;
+        transform: translateZ(1em);
+    }
+
+    10% {
+        animation-timing-function: $ease-in;
+        transform: translateZ(8em);
+    }
+
+    30% {
+        animation-timing-function: $ease-in;
+        transform: translateZ(4em);
+    }
+
+    50% {
+        animation-timing-function: $ease-in;
+        transform: translateZ(2em);
+    }
+
+    70% {
+        animation-timing-function: $ease-in;
+        transform: translateZ(1.5em);
+    }
+}
+
+@keyframes bounce-l {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: $ease-out;
+        transform: rotateX(90deg) rotateY(-90deg) scaleY(1);
+    }
+
+    10% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) rotateY(-90deg) scaleY(8);
+    }
+
+    30% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) rotateY(-90deg) scaleY(4);
+    }
+
+    50% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) rotateY(-90deg) scaleY(2);
+    }
+
+    70% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) rotateY(-90deg) scaleY(1.5);
+    }
+}
+
+@keyframes bounce-r {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: $ease-out;
+        transform: rotateX(90deg) scaleY(1);
+    }
+
+    10% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) scaleY(8);
+    }
+
+    30% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) scaleY(4);
+    }
+
+    50% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) scaleY(2);
+    }
+
+    70% {
+        animation-timing-function: $ease-in;
+        transform: rotateX(90deg) scaleY(1.5);
+    }
+}
+
+@keyframes bounce-s {
+
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+        animation-timing-function: $ease-out;
+        transform: scaleY(0.5);
+    }
+
+    10% {
+        animation-timing-function: $ease-in;
+        transform: scaleY(4);
+    }
+
+    30% {
+        animation-timing-function: $ease-in;
+        transform: scaleY(2);
+    }
+
+    50% {
+        animation-timing-function: $ease-in;
+        transform: scaleY(1);
+    }
+
+    70% {
+        animation-timing-function: $ease-in;
+        transform: scaleY(0.75);
+    }
+}
+
+
+.loader--text {
+   
+    width: 8rem;
+    margin: auto;
+}
+
+.loader--text:after {
+    content: "Loading";
+    font-weight: bold;
+    animation-name: loading-text;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+    15% {
+        transform: translateX(0);
+    }
+
+    45% {
+        transform: translateX(230px);
+    }
+
+    65% {
+        transform: translateX(230px);
+    }
+
+    95% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes loading-text {
+    0% {
+        content: "Loading";
+    }
+
+    25% {
+        content: "Loading.";
+    }
+
+    50% {
+        content: "Loading..";
+    }
+
+    75% {
+        content: "Loading...";
+    }
+}

@@ -6,9 +6,10 @@ const CanvasLoader = () => {
   console.log(progress.toFixed(2));
 
   return (
-    <Html>
-      <span className="canvas-load"></span>
+    <Html className=" ">
+      <span className="canvas-load  "></span>
       <p
+        className=" h-[100vh] text-center flex items-center "
         style={{
           fontSize: 14,
           color: "#f1f1f1",

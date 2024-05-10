@@ -32,7 +32,7 @@ const Navbar = () => {
 
   const variants = {
     open: {
-      clipPath: `circle(1000px at 65% 5.2%)`,
+      clipPath: `circle(1000px at 80% 5.2%)`,
       transition: {
         type: "spring",
         stiffness: 20,
@@ -40,7 +40,7 @@ const Navbar = () => {
       },
     },
     close: {
-      clipPath: "circle(0px at 65% 5.2%)",
+      clipPath: "circle(0px at 80% 5.2%)",
       transition: {
         delay: 0.5,
         type: "spring",

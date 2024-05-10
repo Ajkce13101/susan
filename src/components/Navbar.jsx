@@ -30,6 +30,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navVariants = {
+    initial: {
+      scale: 0,
+      opacity: 0,
+    },
+    animate: {
+      scale: 1,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
   const variants = {
     open: {
       clipPath: `circle(1000px at 80% 5.2%)`,
@@ -81,26 +96,33 @@ const Navbar = () => {
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
-        <Link
-          to="/"
-          className="flex items-center gap-2"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
-        >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p
-            className={` ${
-              scrolled ? "text-primary" : "text-white"
-            }  text-[18px] font-bold cursor-pointer flex`}
+        <motion.div variants={navVariants} initial="initial" animate="animate">
+          <Link
+            to="/"
+            className="flex items-center gap-2"
+            onClick={() => {
+              setActive("");
+              window.scrollTo(0, 0);
+            }}
           >
-            Susan &nbsp;
-            <span className="sm:block hidden"> | Khanal</span>
-          </p>
-        </Link>
+            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+            <p
+              className={` ${
+                scrolled ? "text-primary" : "text-white"
+              }  text-[18px] font-bold cursor-pointer flex`}
+            >
+              Susan &nbsp;
+              <span className="sm:block hidden"> | Khanal</span>
+            </p>
+          </Link>
+        </motion.div>
 
-        <ul className="list-none hidden md:flex flex-row gap-10">
+        <motion.ul
+          variants={navVariants}
+          initial="initial"
+          animate="animate"
+          className="list-none hidden md:flex flex-row gap-10"
+        >
           {navLinks.map((nav) => (
             <Link
               activeClass="active"
@@ -110,7 +132,8 @@ const Navbar = () => {
               offset={10}
               duration={500}
             >
-              <li
+              <motion.li
+                variants={navVariants}
                 key={nav.id}
                 className={`
               ${scrolled ? "text-tertiary" : "text-secondary"}
@@ -119,10 +142,10 @@ const Navbar = () => {
                 <a>
                   {nav.title} <span></span>
                 </a>
-              </li>
+              </motion.li>
             </Link>
           ))}
-        </ul>
+        </motion.ul>
 
         <div className="md:hidden flex flex-1 justify-end items-center relative ">
           <div className="bg-white rounded-full p-1.5 z-20 shadow-lg shadow:primary">

@@ -11,36 +11,19 @@ import Earth from "./canvas/Earth";
 
 import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
-import { duration } from "@mui/material";
 
 const title = {
   initial: {
-    y: 50,
+    y: "20%",
     Opacity: 0,
   },
   animate: {
     y: 0,
     Opacity: 1,
-  },
-};
-const leftVariants = {
-  initial: {
-    x: "-20%",
-    Opacity: 0,
-  },
-  animate: {
-    x: 0,
-    Opacity: 1,
-  },
-};
-const rightVariants = {
-  initial: {
-    x: "20%",
-    Opacity: 0,
-  },
-  animate: {
-    x: 0,
-    Opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.2,
+    },
   },
 };
 
@@ -106,42 +89,38 @@ const Contact = () => {
   };
   return (
     <motion.div
+      ref={titleRef}
+      variants={title}
+      initial="initial"
+      animate={titleView && "animate"}
       className={`${styles.padding}  mx-auto relative z-0`}
       id="contact"
     >
-      <motion.div
-        ref={titleRef}
-        variants={title}
-        initial="initial"
-        animate={titleView && "animate"}
-      >
-        <p className={`${styles.sectionSubText} text-center`}>Let's Connect</p>
-        <div className="flex flex-col items-center">
-          <h2 className={`${styles.sectionHeadText} text-center`}>
-            Contact Me
-          </h2>
-          <ul className="dottedLine ">
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </motion.div>
+      <p className={`${styles.sectionSubText} text-center`}>Let's Connect</p>
+      <div className="flex flex-col items-center">
+        <h2 className={`${styles.sectionHeadText} text-center`}>Contact Me</h2>
+        <ul className="dottedLine ">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
       <div className="connect-section flex justify-center items-start pt-10">
-        <motion.div
-          variants={leftVariants}
-          initial="initial"
-          animate={titleView && "animate"}
-          className="h-[500px] flex-1 max-sm:w-full "
-        >
+        {/* <div className="info flex-1">
+          <h3>Lets Talk</h3>
+          <p className="text-white">
+            I'm always happy to hear about exciting opportunities, join in
+            interesting conversations, and build valuable connections. Let's
+            connect!
+          </p>
+          <div className="img">
+            <img src={connectImg} alt="" />
+          </div>
+        </div> */}
+        <div className="h-[500px] flex-1 max-sm:w-full ">
           <Earth></Earth>
-        </motion.div>
-        <motion.div
-          variants={rightVariants}
-          initial="initial"
-          animate={titleView && "animate"}
-          className="form flex-1 "
-        >
+        </div>
+        <div className="form flex-1 ">
           <div className="form-content  bg-primary-gradient text-white shadow-card">
             <form onSubmit={handleSubmit(onSubmit)} ref={form}>
               {/* register your input into the hook by invoking the "register" function */}
@@ -201,7 +180,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-        </motion.div>
+        </div>
       </div>
     </motion.div>
   );

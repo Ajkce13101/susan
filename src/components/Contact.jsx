@@ -15,7 +15,7 @@ import { duration } from "@mui/material";
 
 const title = {
   initial: {
-    y: "50px",
+    y: 50,
     Opacity: 0,
   },
   animate: {

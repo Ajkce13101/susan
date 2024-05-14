@@ -15,20 +15,17 @@ import { duration } from "@mui/material";
 
 const title = {
   initial: {
-    y: "200px",
+    y: "50px",
     Opacity: 0,
   },
   animate: {
     y: 0,
     Opacity: 1,
-    transition: {
-      duration: 1,
-    },
   },
 };
 const leftVariants = {
   initial: {
-    x: "-40%",
+    x: "-20%",
     Opacity: 0,
   },
   animate: {

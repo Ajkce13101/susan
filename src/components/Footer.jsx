@@ -10,12 +10,12 @@ import "./footer.css";
 function Footer() {
   return (
     <footer
-      className={`  bg-black  py-10 mx-auto flex items-center justify-center`}
+      className={`  bg-black  py-2 mx-auto flex items-center justify-center`}
     >
       <div
         className={`${styles.paddingX} flex justify-between w-full items-center max-w-[1400px] max-md:flex-col`}
       >
-        <div className=" text-center max-sm:text-[14px] ">
+        <div className=" text-center text-[16px] max-sm:text-[14px] ">
           <p className="copyright-text ">
             Created By <span className="text-green font-semibold">Susan</span> |
             &copy; 2024 All rights reserved

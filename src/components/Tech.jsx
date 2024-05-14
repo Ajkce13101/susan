@@ -9,7 +9,7 @@ import { motion, useInView } from "framer-motion";
 
 const variants = {
   initial: {
-    x: -500,
+    x: "-20%",
     y: 100,
     opacity: 0,
   },
@@ -37,16 +37,17 @@ const listvariants = {
     },
   },
 };
+
 const techvariants = {
   open: {
-    x: -100,
+    y: 100,
     opacity: 0,
   },
   start: {
-    x: 0,
+    y: 0,
     opacity: 1,
     transition: {
-      duration: 2,
+      duration: 1,
       staggerChildren: 0.2,
     },
   },
@@ -54,7 +55,9 @@ const techvariants = {
 
 const Tech = () => {
   const ref = useRef();
+  const tools = useRef();
   const isInView = useInView(ref, { margin: "-200px" });
+  const tollsIsInView = useInView(tools, { margin: "-200px" });
   return (
     <motion.div
       ref={ref}
@@ -110,9 +113,10 @@ const Tech = () => {
           </div>
         </div>
         <motion.div
+          ref={tools}
           variants={techvariants}
           initial="open"
-          animate="start"
+          animate={tollsIsInView && "start"}
           className=" mt-10 flex-1"
         >
           <p className="blue-text-gradient font-extrabold text-2xl mb-10">

@@ -6,7 +6,7 @@ import Tilt from "react-parallax-tilt";
 
 const variants = {
   initial: {
-    x: -500,
+    x: "-20%",
     y: 100,
     opacity: 0,
   },

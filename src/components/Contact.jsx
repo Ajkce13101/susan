@@ -9,7 +9,7 @@ import "./conect.scss";
 import { EarthCanvas } from "./canvas";
 import Earth from "./canvas/Earth";
 
-import { delay, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { duration } from "@mui/material";
 
@@ -27,21 +27,13 @@ const title = {
   },
 };
 const leftVariants = {
-  open: {
+  initial: {
     x: "-40%",
     Opacity: 0,
-    transition: {
-      delay: 1,
-    },
   },
-  close: {
+  animate: {
     x: 0,
     Opacity: 1,
-    transition: {
-      duration: 0.4,
-
-      delay: 0.1,
-    },
   },
 };
 const rightVariants = {
@@ -52,10 +44,6 @@ const rightVariants = {
   animate: {
     x: 0,
     Opacity: 1,
-    transition: {
-      duration: 0.4,
-      delay: 0.1,
-    },
   },
 };
 
@@ -64,9 +52,6 @@ const Contact = () => {
   const titleRef = useRef();
   const titleView = useInView(titleRef, { margin: "-200px" });
   const [isSent, setIsSent] = useState(false);
-  const earthRef = useRef();
-  const earthView = useInView(earthRef, { margin: "-200px" });
-
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -147,10 +132,9 @@ const Contact = () => {
       </motion.div>
       <div className="connect-section flex justify-center items-start pt-10">
         <motion.div
-          ref={earthRef}
           variants={leftVariants}
-          initial="open"
-          animate={earthView && "close"}
+          initial="initial"
+          animate={titleView && "animate"}
           className="h-[500px] flex-1 max-sm:w-full "
         >
           <Earth></Earth>

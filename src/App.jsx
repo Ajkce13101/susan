@@ -17,7 +17,7 @@ import Loading from "./components/Loading";
 import { useEffect, useState } from "react";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);

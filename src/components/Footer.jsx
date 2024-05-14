@@ -17,7 +17,7 @@ function Footer() {
       >
         <div className=" text-center text-[16px] max-sm:text-[14px] ">
           <p className="copyright-text ">
-            Created By <span className="text-green font-semibold">Susan</span> |
+            Created By <span className="text-green font-semibold">Ajaya</span> |
             &copy; 2024 All rights reserved
           </p>
           <p className="Footer__message">

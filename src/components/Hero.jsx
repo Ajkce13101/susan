@@ -50,8 +50,8 @@ const Hero = () => {
             className={`${styles.heroSubText} mt-2 text-white-100`}
           >
             I am a Technical Support Officer <br className="sm:block hidden" />I
-            bring a diverse set of skills in the relam of information and
-            communication Technology
+            bring a diverse set of skills in the realm of information and
+            communication Technology.
           </motion.p>
 
           <motion.div

@@ -1,6 +1,7 @@
 .education-section {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-top: 200px;
 
     .main-title {
         display: flex;
@@ -11,7 +12,10 @@
 
     .container {
         position: relative;
-        margin-bottom: 150px;
+        &:not(:last-child){
+
+            margin-bottom: 150px;
+        }
 
         .content-image__path--3,
         .content-image__path--2 {

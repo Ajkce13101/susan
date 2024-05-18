@@ -93,7 +93,7 @@ const Contact = () => {
       variants={title}
       initial="initial"
       animate={titleView && "animate"}
-      className={`${styles.padding}  mx-auto relative z-0`}
+      className={`${styles.paddingX}  mx-auto relative z-0 pt-[200px] pb-[200px]`}
       id="contact"
     >
       <p className={`${styles.sectionSubText} text-center`}>Let's Connect</p>
@@ -106,17 +106,6 @@ const Contact = () => {
         </ul>
       </div>
       <div className="connect-section flex justify-center items-start pt-10">
-        {/* <div className="info flex-1">
-          <h3>Lets Talk</h3>
-          <p className="text-white">
-            I'm always happy to hear about exciting opportunities, join in
-            interesting conversations, and build valuable connections. Let's
-            connect!
-          </p>
-          <div className="img">
-            <img src={connectImg} alt="" />
-          </div>
-        </div> */}
         <div className="h-[500px] flex-1 max-sm:w-full ">
           <Earth></Earth>
         </div>

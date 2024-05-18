@@ -113,7 +113,7 @@ function Education() {
 
   return (
     <section
-      className={`${styles.padding} education-section pt-100 mx-auto`}
+      className={`${styles.paddingX} education-section  mx-auto`}
       id="education"
     >
       <div className="wrapper">
@@ -140,7 +140,8 @@ function Education() {
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
                     <li>
-                      - OSI model, TCP/IP stack, Ethernet and wireless networking.
+                      - OSI model, TCP/IP stack, Ethernet and wireless
+                      networking.
                     </li>
                     <li>
                       {" "}
@@ -197,7 +198,7 @@ function Education() {
                     <li>- Cyber Security</li>
                     <li>- Systems Analysis and Design</li>
                     <li>
-                     - Understanding of various protocols and their roles in
+                      - Understanding of various protocols and their roles in
                       communication.
                     </li>
                   </ul>
@@ -224,7 +225,9 @@ function Education() {
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
                     <li>- Australian Workplace Culture and communication</li>
-                    <li>- Interview Preperation and Professional Performance</li>
+                    <li>
+                      - Interview Preperation and Professional Performance
+                    </li>
                     <li>- Workplace Relationships and Establishing Network</li>
                   </ul>
                 </div>

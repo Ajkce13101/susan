@@ -50,7 +50,7 @@ const About = () => {
       // whileInView="animate"
       animate={isInView && "animate"}
       id="about"
-      className={`${styles.paddingX} flex flex-col items-center justify-center mb-[200px] pt-[100px]`}
+      className={`${styles.paddingX} flex flex-col items-center justify-center pt-[200px]`}
     >
       <motion.div
         variants={variants}

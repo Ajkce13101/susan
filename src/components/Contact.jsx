@@ -33,6 +33,9 @@ const Contact = () => {
   const titleView = useInView(titleRef, { margin: "-200px" });
   const [isSent, setIsSent] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const serviceId = import.meta.env.VITE_SERVICE_ID;
+  const templateId = import.meta.env.VITE_TEMPLATE_ID;
+  const emailjsId = import.meta.env.VITE_EMAILJS_ID;
 
   const {
     register,
@@ -44,12 +47,7 @@ const Contact = () => {
   const onSubmit = (data) => {
     setIsLoading(true);
     return emailjs
-      .sendForm(
-        "service_3ugx8dy",
-        "template_53zr3xu",
-        form.current,
-        "z7_aN2EHdA9jSKVeW"
-      )
+      .sendForm(serviceId, templateId, form.current, emailjsId)
       .then(
         (result) => {
           setIsLoading(false);

@@ -133,6 +133,7 @@ const Tech = () => {
                   data-tooltip-id="my-tooltip"
                   data-tooltip-content={tech.name}
                   data-tooltip-variant="info"
+                  key={tech.name}
                 >
                   <motion.div className="state" variants={techvariants}>
                     <div

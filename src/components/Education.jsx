@@ -10,8 +10,6 @@ function Education() {
   const edu1 = useRef();
   const edu2 = useRef();
   const edu3 = useRef();
-  const edu4 = useRef();
-  const edu5 = useRef();
 
   useEffect(() => {
     gsap.from(
@@ -69,46 +67,6 @@ function Education() {
 
       []
     );
-    gsap.fromTo(
-      edu4.current,
-
-      { opacity: 0, y: 200 },
-      {
-        duration: 0.5,
-        y: 0,
-        delay: 0.4,
-        stagger: 0.3,
-        opacity: 1,
-
-        scrollTrigger: {
-          trigger: edu4.current,
-          start: "top 80%",
-          marker: true,
-        },
-      },
-
-      []
-    );
-    gsap.fromTo(
-      edu5.current,
-
-      { opacity: 0, y: 200 },
-      {
-        duration: 0.5,
-        y: 0,
-        delay: 0.4,
-        stagger: 0.3,
-        opacity: 1,
-
-        scrollTrigger: {
-          trigger: edu5.current,
-          start: "top 80%",
-          marker: true,
-        },
-      },
-
-      []
-    );
   }, []);
 
   return (
@@ -130,7 +88,7 @@ function Education() {
         </div>
         <div className="container">
           <div className="row flex">
-            <div className="educational-qualification" ref={edu2}>
+            <div className="educational-qualification" ref={edu1}>
               <div className="content">
                 <h3 className="qualification">Undergraduate certificate</h3>
                 <button className="button">2020 - 2021</button>
@@ -181,7 +139,7 @@ function Education() {
         <div className="container">
           <div className="row flex ">
             <div className="empty-row"></div>
-            <div className="educational-qualification" ref={edu3}>
+            <div className="educational-qualification" ref={edu2}>
               <div className="content">
                 <h3 className="qualification">
                   Bacheolor of Information Technology
@@ -215,7 +173,7 @@ function Education() {
         </div>
         <div className="container">
           <div className="row flex">
-            <div className="educational-qualification" ref={edu4}>
+            <div className="educational-qualification" ref={edu3}>
               <div className="content">
                 <h3 className="qualification">Professional Year Programme</h3>
                 <button className="button">2023 - 2024</button>

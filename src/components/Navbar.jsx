@@ -1,27 +1,54 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
-import { styles } from "../style";
-import { navLinks } from "../constants";
-import { susanLogo, susanLogoBlue, menu, closeBlack } from "../assets";
+import { styles } from "../../../style";
+
+import menu from "../../img/menu.png";
+import closeBlack from "../../img/closeBlack.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.scss";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+
+const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "skills",
+    title: "Skill",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "portfolio",
+    title: "Portfolio",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
 
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [logo, setLogo] = useState(susanLogo);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
         setScrolled(true);
-        setLogo(susanLogoBlue);
+        navref.current.classList.add("stickyNav");
       } else {
         setScrolled(false);
-        setLogo(susanLogo);
+        navref.current.classList.remove("stickyNav");
       }
     };
 
@@ -87,8 +114,11 @@ const Navbar = () => {
       opacity: 0,
     },
   };
+
+  const navref = useRef();
   return (
     <nav
+      ref={navref}
       className={`${
         styles.paddingX
       } nav w-full flex items-center  transition-all ease-in-out duration-1000 fixed top-0 z-20 ${
@@ -105,14 +135,23 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
-            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p
-              className={` ${
-                scrolled ? "text-primary" : "text-white"
-              }  text-[18px] font-bold cursor-pointer flex`}
+              className={`  font-bold cursor-pointer flex logo transition-all dura`}
             >
-              Susan &nbsp;
-              <span className="sm:block hidden"> | Khanal</span>
+              <span
+                className={` ${
+                  scrolled ? "text-3xl" : "text-4xl"
+                } transition-all duration-500 text-[#007bff] `}
+              >
+                Aj
+              </span>
+              <span
+                className={` ${
+                  scrolled ? "text-black text-3xl" : "text-white text-4xl"
+                } transition-all duration-500`}
+              >
+                aya
+              </span>
             </p>
           </Link>
         </motion.div>
@@ -129,19 +168,17 @@ const Navbar = () => {
               to={nav.id}
               spy={true}
               smooth={true}
-              offset={10}
               duration={500}
+              key={nav.id}
             >
               <motion.li
                 variants={navVariants}
                 key={nav.id}
                 className={`
-              ${scrolled ? "text-tertiary" : "text-secondary"}
+              ${scrolled ? "text-black font-bold text-[16px]" : "text-white"}
               text-[18px] font-medium cursor-pointer relative links`}
               >
-                <a>
-                  {nav.title} <span></span>
-                </a>
+                {nav.title} <span></span>
               </motion.li>
             </Link>
           ))}
@@ -162,43 +199,59 @@ const Navbar = () => {
             />
           </motion.div>
 
-          <motion.div
-            animate={toggle ? "open" : "close"}
-            className={`flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
-          >
-            <motion.div className="background  absolute " variants={variants} />
-            <motion.ul
-              variants={listVarient}
-              className="list-none flex justify-center items-center flex-1 flex-col  w-full text-center gap-12 delay-1000"
-            >
-              {navLinks.map((nav) => (
-                <Link
-                  activeClass="active"
-                  to={nav.id}
-                  spy={true}
-                  smooth={true}
-                  offset={10}
-                  duration={500}
+          <AnimatePresence>
+            {toggle && (
+              <motion.div
+                initial="close"
+                animate={toggle ? "open" : "close"}
+                exit="close"
+                className={` flex p-6  fixed top-0 right-0  min-w-[240px] z-10  h-full max-sm:w-[50vw] `}
+              >
+                <motion.div
+                  className="background  absolute "
+                  variants={variants}
+                />
+                <motion.ul
+                  variants={listVarient}
+                  className="list-none flex justify-center items-center flex-1 flex-col  w-full text-center gap-12 delay-1000"
                 >
-                  <motion.li
-                    variants={itemVariants}
-                    key={nav.id}
-                    className={`font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
-                      active === nav.title ? "text-black" : "text-tertiary"
-                    }`}
-                    onClick={() => {
-                      setToggle(!toggle);
-                      setActive(nav.title);
-                    }}
-                  >
-                    <a className="w-full h-full text-center flex items-center justify-center relative font-semibold">
-                      {nav.title} <span></span>
-                    </a>
-                  </motion.li>
-                </Link>
-              ))}
-            </motion.ul>
-          </motion.div>
+                  {navLinks.map((nav) => (
+                    <Link
+                      activeClass="active"
+                      to={nav.id}
+                      spy={true}
+                      smooth={true}
+                      offset={10}
+                      duration={500}
+                      className={`${
+                        toggle
+                          ? "visible"
+                          : "invisible transition-all duration-500 delay-200"
+                      }`}
+                    >
+                      <motion.li
+                        variants={itemVariants}
+                        key={nav.id}
+                        className={`  font-poppins font-medium cursor-pointer text-[16px]  w-full h-[5vh] flex items-center justify-center links  ${
+                          active === nav.title ? "text-black" : "text-black"
+                        }`}
+                        onClick={() => {
+                          setToggle(!toggle);
+                          setActive(nav.title);
+                        }}
+                      >
+                        <a
+                          className={`flex w-full h-full text-center  items-center justify-center relative font-semibold`}
+                        >
+                          {nav.title} <span></span>
+                        </a>
+                      </motion.li>
+                    </Link>
+                  ))}
+                </motion.ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </nav>

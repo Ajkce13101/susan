@@ -1,71 +1,102 @@
 .nav {
-    .links{
-
+    padding: 35px 25px;
     
+    
+    .logo{
+      font-family: "Kaushan Script", cursive;
+    }
+    .links {
+  
+      &:hover>span {
+          width: 60%;
+          opacity: 1;
+          visibility: visible;
+        }
+      
+        &:hover>span::before {
+          width: 20%;
+        }
+      
+        &:hover>span::after {
+          width: 15%;
+        }
+  
+  
     span {
-    width: 0%;
-    height: 2px;
-    background-color: #151030;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-radius: 50%;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease-out 0s;
-
-    &::before {
-        position: absolute;
-        content: "";
-        width: 0;
+        width: 0%;
         height: 2px;
-        background-color: #151030;
-        left: 110%;
-    }
-
-    &::after {
+        background-color: white;
         position: absolute;
-        content: "";
-        width: 0;
-        height: 2px;
-        background-color: #151030;
-        left: 140%;
+        left: 0;
+        bottom: 0;
+        border-radius: 50%;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.3s ease-out 0s;
+    
+        &::before {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 2px;
+          background-color: white;
+          left: 110%;
+        }
+    
+        &::after {
+          position: absolute;
+          content: "";
+          width: 0;
+          height: 2px;
+          background-color: white;
+          left: 140%;
+        }
+      }
+    
     }
-}
-
-.active a span {
-    width: 60%;
-    opacity: 1;
-    visibility: visible;
-}
-
-.active a span::before {
-    width: 20%;
-    opacity: 1;
-    visibility: visible;
-}
-
-.active a span::after {
-    width: 15%;
-    opacity: 1;
-    visibility: visible;
-}
-}}
-
-.background{
-
+      .active  span {
+        width: 60%;
+        opacity: 1;
+        visibility: visible;
+      }
+    
+      .active  span::before {
+        width: 20%;
+        opacity: 1;
+        visibility: visible;
+      }
+    
+      .active  span::after {
+        width: 15%;
+        opacity: 1;
+        visibility: visible;
+      }
+  }
+  
+  .background {
+  
     position: absolute;
     background: white;
-   
+  
     height: 100vh;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-   
-   
-
-
-}
-
-
+  
+  
+  
+  
+  }
+  
+  .stickyNav {
+    box-shadow: 3px -8px 28px 10px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 3px -8px 28px 10px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 3px -8px 28px 10px rgba(0, 0, 0, 0.75);
+    ul a li  span,
+      ul a li  span::after,
+      ul li  span::before {
+        background-color: black !important;
+      }
+  }
+  

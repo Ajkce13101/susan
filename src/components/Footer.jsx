@@ -29,19 +29,19 @@ function Footer() {
           <ul className="header-social">
             <li>
               <a href="#" className="rounded-circle github-link">
-                {" "}
+                {"https://github.com/susan-khanal"}
                 <GitHubIcon className="github" />
               </a>
             </li>
             <li>
               <a href="#" className="rounded-circle linkedIn-link">
-                {" "}
+                {"https://www.linkedin.com/in/susan-khanal/"}
                 <LinkedInIcon className="linkedIn" />
               </a>
             </li>
             <li>
               <a href="#" className="rounded-circle facebook-link">
-                {" "}
+                {"https://www.facebook.com/susan.khanal.56"}
                 <FacebookIcon className="facebook" />
               </a>
             </li>
@@ -53,7 +53,7 @@ function Footer() {
             </li>
             <li>
               <a href="#" className="rounded-circle youtube-link">
-                {" "}
+                {"https://www.youtube.com/@sauravgajmer23"}
                 <YouTubeIcon className="youtube " />
               </a>
             </li>

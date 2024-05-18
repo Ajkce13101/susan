@@ -1,12 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { styles } from "../style"
+import { styles } from "../style";
 
-import menu from "../assets/menu.png";
-import closeBlack from "../assets/closeBlack.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.scss";
 import { AnimatePresence, motion } from "framer-motion";
+import { susanLogo, susanLogoBlue, menu, closeBlack } from "../assets";
 
 const navLinks = [
   {
@@ -39,15 +38,18 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [logo, setLogo] = useState(susanLogo);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
       if (scrollTop > 50) {
         setScrolled(true);
+        setLogo(susanLogoBlue);
         navref.current.classList.add("stickyNav");
       } else {
         setScrolled(false);
+        setLogo(susanLogo);
         navref.current.classList.remove("stickyNav");
       }
     };
@@ -135,23 +137,14 @@ const Navbar = () => {
               window.scrollTo(0, 0);
             }}
           >
+            <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
             <p
-              className={`  font-bold cursor-pointer flex logo transition-all dura`}
+              className={` ${
+                scrolled ? "text-primary" : "text-white"
+              }  text-[18px] font-bold cursor-pointer flex`}
             >
-              <span
-                className={` ${
-                  scrolled ? "text-3xl" : "text-4xl"
-                } transition-all duration-500 text-[#007bff] `}
-              >
-                Su
-              </span>
-              <span
-                className={` ${
-                  scrolled ? "text-black text-3xl" : "text-white text-4xl"
-                } transition-all duration-500`}
-              >
-                san
-              </span>
+              Susan &nbsp;
+              <span className="sm:block hidden"> | Khanal</span>
             </p>
           </Link>
         </motion.div>
@@ -160,7 +153,7 @@ const Navbar = () => {
           variants={navVariants}
           initial="initial"
           animate="animate"
-          className="list-none hidden md:flex flex-row gap-10"
+          className="list-none hidden lg:flex flex-row gap-10"
         >
           {navLinks.map((nav) => (
             <Link
@@ -184,7 +177,7 @@ const Navbar = () => {
           ))}
         </motion.ul>
 
-        <div className="md:hidden flex flex-1 justify-end items-center relative ">
+        <div className="lg:hidden flex flex-1 justify-end items-center relative ">
           <motion.div
             variants={navVariants}
             initial="initial"

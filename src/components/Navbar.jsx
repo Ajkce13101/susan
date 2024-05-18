@@ -22,7 +22,7 @@ const navLinks = [
     title: "Education",
   },
   {
-    id: "experience",
+    id: "work",
     title: "Experience",
   },
   {

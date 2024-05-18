@@ -93,7 +93,7 @@ const Contact = () => {
       variants={title}
       initial="initial"
       animate={titleView && "animate"}
-      className={`${styles.paddingX}  mx-auto relative z-0 pt-[200px] pb-[200px]`}
+      className={`${styles.paddingX} mx-auto pt-[200px] max-w-[1400px] pb-[200px] relative z-0`}
       id="contact"
     >
       <p className={`${styles.sectionSubText} text-center`}>Let's Connect</p>

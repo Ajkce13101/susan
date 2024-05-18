@@ -120,7 +120,7 @@ function Education() {
         <p className={`${styles.sectionSubText} text-center`}>Education</p>
         <div className="flex flex-col items-center">
           <h2 className={`${styles.sectionHeadText} text-center`}>
-            My Educational QUalification
+            My Educational Qualification
           </h2>
           <ul className="dottedLine ">
             <li></li>
@@ -214,7 +214,7 @@ function Education() {
           <div className="row flex">
             <div className="educational-qualification" ref={edu4}>
               <div className="content">
-                <h3 className="qualification">Professional Year Programe</h3>
+                <h3 className="qualification">Professional Year Programme</h3>
                 <button className="button">2023 - 2024</button>
                 <span>Educational Institute: </span>
                 <h4 className="college">Australian Computer Society (ACS)</h4>

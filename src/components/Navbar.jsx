@@ -143,14 +143,14 @@ const Navbar = () => {
                   scrolled ? "text-3xl" : "text-4xl"
                 } transition-all duration-500 text-[#007bff] `}
               >
-                Aj
+                Su
               </span>
               <span
                 className={` ${
                   scrolled ? "text-black text-3xl" : "text-white text-4xl"
                 } transition-all duration-500`}
               >
-                aya
+                san
               </span>
             </p>
           </Link>

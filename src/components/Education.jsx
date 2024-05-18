@@ -144,11 +144,11 @@ function Education() {
                     </li>
                     <li>
                       {" "}
-                      - configuration, management, troubleshooting, and
+                      - Configuration, management, troubleshooting, and
                       optimization of computer networks.
                     </li>
                     <li>
-                      - Explores voice, video, and data transmission technologies
+                      - Explored Operating System and Information System Basics
                     </li>
                   </ul>
                 </div>

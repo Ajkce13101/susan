@@ -18,16 +18,12 @@ const navLinks = [
     title: "About",
   },
   {
-    id: "skills",
-    title: "Skill",
-  },
-  {
     id: "education",
     title: "Education",
   },
   {
-    id: "portfolio",
-    title: "Portfolio",
+    id: "skills",
+    title: "Skill",
   },
   {
     id: "contact",

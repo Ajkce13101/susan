@@ -17,7 +17,7 @@ function Footer() {
       >
         <div className=" text-center text-[16px] max-sm:text-[14px] ">
           <p className="copyright-text ">
-            Created By <span className="text-green font-semibold">Ajaya</span> |
+            Created By <a href="https://www.linkedin.com/in/ajkce/"><span className="text-green font-semibold">Ajaya</span></a> |
             &copy; 2024 All rights reserved
           </p>
           <p className="Footer__message">
@@ -28,20 +28,20 @@ function Footer() {
         <div>
           <ul className="header-social">
             <li>
-              <a href="#" className="rounded-circle github-link">
-                {"https://github.com/susan-khanal"}
+              <a href="https://github.com/susan-khanal" className="rounded-circle github-link">
+                {" "}
                 <GitHubIcon className="github" />
               </a>
             </li>
             <li>
-              <a href="#" className="rounded-circle linkedIn-link">
-                {"https://www.linkedin.com/in/susan-khanal/"}
+              <a href="https://www.linkedin.com/in/susan-khanal/" className="rounded-circle linkedIn-link">
+                {" "}
                 <LinkedInIcon className="linkedIn" />
               </a>
             </li>
             <li>
-              <a href="#" className="rounded-circle facebook-link">
-                {"https://www.facebook.com/susan.khanal.56"}
+              <a href="https://www.facebook.com/susan.khanal.56" className="rounded-circle facebook-link">
+                {" "}
                 <FacebookIcon className="facebook" />
               </a>
             </li>
@@ -52,8 +52,8 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="rounded-circle youtube-link">
-                {"https://www.youtube.com/@sauravgajmer23"}
+              <a href="https://www.youtube.com/@sauravgajmer23" className="rounded-circle youtube-link">
+                {" "}
                 <YouTubeIcon className="youtube " />
               </a>
             </li>

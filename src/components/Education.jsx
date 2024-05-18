@@ -140,15 +140,15 @@ function Education() {
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
                     <li>
-                      OSI model, TCP/IP stack, Ethernet and wireless networking.
+                      - OSI model, TCP/IP stack, Ethernet and wireless networking.
                     </li>
                     <li>
                       {" "}
-                      configuration, management, troubleshooting, and
+                      - configuration, management, troubleshooting, and
                       optimization of computer networks.
                     </li>
                     <li>
-                      Explores voice, video, and data transmission technologies
+                      - Explores voice, video, and data transmission technologies
                     </li>
                   </ul>
                 </div>

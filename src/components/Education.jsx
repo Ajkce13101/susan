@@ -192,10 +192,12 @@ function Education() {
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
                     <li></li>
-                    <li>Webpage Design and Development</li>
-                    <li>Computer Networking</li>
+                    <li>- Cloud Computing</li>
+                    <li>- Data Communication and Networks</li>
+                    <li>- Cyber Security</li>
+                    <li>- Systems Analysis and Design</li>
                     <li>
-                      Understanding of various protocols and their roles in
+                     - Understanding of various protocols and their roles in
                       communication.
                     </li>
                   </ul>
@@ -221,9 +223,9 @@ function Education() {
                 <div className="skills">
                   <h3>Skills and Knowledge learnt</h3>
                   <ul>
-                    <li>Australian Workplace Culture and communication</li>
-                    <li>Interview Preperation and Professional Performance</li>
-                    <li>Workplace Relationships and Establishing Network</li>
+                    <li>- Australian Workplace Culture and communication</li>
+                    <li>- Interview Preperation and Professional Performance</li>
+                    <li>- Workplace Relationships and Establishing Network</li>
                   </ul>
                 </div>
               </div>

@@ -23,6 +23,7 @@ import {
   jobit,
   tripguide,
   threejs,
+  wyscom,
 } from "../assets";
 
 export const navLinks = [
@@ -130,7 +131,7 @@ const experiences = [
   {
     title: "Technical Support Officer",
     company_name: "WYSCOM",
-    icon: starbucks,
+    icon: wyscom,
     iconBg: "#383E56",
     date: "November 2023 - Present",
     points: [

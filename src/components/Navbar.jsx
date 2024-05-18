@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 
-import { styles } from "../../../style";
+import { styles } from "../style"
 
 import menu from "../../img/menu.png";
 import closeBlack from "../../img/closeBlack.png";

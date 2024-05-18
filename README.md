@@ -43,17 +43,17 @@
 
 ![About Me](/.github/images/img2.png "About Me")
 
-![Skills ](/.github/images/img3.png "Skills")
+![Education](/.github/images/img3.png "Education")
 
-![Education](/.github/images/img4.png "Education")
+![Skills ](/.github/images/img4.png "Skills")
 
-![Showcase Projects ](/.github/images/img5.png "Showcase Projects")
+![ Skills ](/.github/images/img5.png "Skills")
 
 ![Contact Me ](/.github/images/img6.png "Contact Me")
 
 ## :gear: Tech Stack
 
-[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Next JS](https://skillicons.dev/icons?i=vite "Next JS")](https://vitejs.dev/ "Next JS") [![JavaScript](https://skillicons.dev/icons?i=js "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
+[![React JS](https://skillicons.dev/icons?i=react "React JS")](https://react.dev/ "React JS") [![Vite JS](https://skillicons.dev/icons?i=vite "Vite JS")](https://vitejs.dev/ "Vite JS") [![Three JS](https://skillicons.dev/icons?i=threejs "Three JS")](https://threejs.org/ "Three JS") [![JavaScript](https://skillicons.dev/icons?i=js "JavaScript")](https://developer.mozilla.org/en-US/docs/Web/JavaScript "JavaScript") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwind "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS") [![Netlify](https://skillicons.dev/icons?i=netlify "Netlify")](https://netlify.app/ "Netlify")
 
 ## :gem: Acknowledgements
 
@@ -61,9 +61,11 @@ Useful resources and dependencies that are used in My Portfolio.
 
 ### Production Dependencies
 
-- [vite](https://www.npmjs.com/package/vite): 13.4.3
-- [framer-motion](https://www.npmjs.com/package/framer-motion): ^10.12.16
+- [three-js](https://www.npmjs.com/package/three): 0.164.1
 - [react](https://www.npmjs.com/package/react): 18.2.0
+- [vite](https://www.npmjs.com/package/vite): 13.4.3
+- [emailjs-browser](https://www.npmjs.com/package/@emailjs/browser): 4.3.3
+- [framer-motion](https://www.npmjs.com/package/framer-motion): ^10.12.16
 - [react-srcoll](https://www.npmjs.com/package/react-scroll): ^6.4.2
 - [react-dom](https://www.npmjs.com/package/react-dom): 18.2.0
 - [react-hook-form](https://www.npmjs.com/package/react-hook-form): 7.51.4
@@ -84,6 +86,7 @@ Useful resources and dependencies that are used in My Portfolio.
 
 To learn more about React.js, take a look at the following resources:
 
+- [Three.js Documentation](https://threejs.org/docs) - learn about awesome Three js.
 - [React.js Documentation](https://react.dev/) - learn about React.js library.
 - [Learn Vite.js](https://react.dev/) - Vite Next Generation Frontend Tooling.
 

@@ -2,8 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 
 import { styles } from "../style"
 
-import menu from "../menu.png";
-import closeBlack from "../closeBlack.png";
+import menu from "../assets/menu.png";
+import closeBlack from "../assets/closeBlack.png";
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./Navbar.scss";
 import { AnimatePresence, motion } from "framer-motion";

@@ -127,7 +127,6 @@ const Contact = () => {
 
               {/* include validation with required or other standard HTML validation rules */}
               <div className="form-section">
-                <ToastContainer className="z-50 mt-16" />
                 <label htmlFor="email">Email</label>
                 <input
                   className="bg-transparent"

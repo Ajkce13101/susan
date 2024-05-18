@@ -15,6 +15,7 @@ import "./app.scss";
 import "react-toastify/dist/ReactToastify.css";
 import Loading from "./components/Loading";
 import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
 
 const App = () => {
   const [loading, setLoading] = useState(false);
@@ -31,6 +32,7 @@ const App = () => {
         </div>
       ) : (
         <div className="bg-primary z-0 ">
+          <ToastContainer className="sm:w-[30vw] sm-w-full text-[14px] mt-[7vh]" />
           <Navbar />
           <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Hero />

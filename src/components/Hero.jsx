@@ -68,10 +68,10 @@ const Hero = () => {
 
             <motion.span
               variants={textVariants}
-              href="./test.docx"
               className="btn btn-blue slidebtn slidebtnblue md:px-[25px] md:py-[14px] px-[5px] py-[10px] text-sm  max-md:w-[40vw]"
-            >
+            > <a href="./test.docx">
               Download Resume
+              </a>
             </motion.span>
           </motion.div>
         </motion.div>

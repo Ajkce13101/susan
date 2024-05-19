@@ -24,6 +24,8 @@ import {
   tripguide,
   threejs,
   wyscom,
+  agate,
+  westfield,
 } from "../assets";
 
 export const navLinks = [
@@ -144,7 +146,7 @@ const experiences = [
   {
     title: "Customer Service Representative",
     company_name: "Scentre Group",
-    icon: tesla,
+    icon: westfield,
     iconBg: "#E6DEDD",
     date: "August 2023 - November 2023",
     points: [
@@ -157,7 +159,7 @@ const experiences = [
   {
     title: "IT Helpdesk Support",
     company_name: "Agate IT",
-    icon: shopify,
+    icon: agate,
     iconBg: "#383E56",
     date: "October 2022 - July 2023",
     points: [

@@ -24,7 +24,7 @@ import threejs from "./tech/threejs.svg";
 import meta from "./company/meta.png";
 import wyscom from "./company/wyscom.png";
 import westfield from "./company/westfield.png";
-import agate from "./company/agate.png";
+import agate from "./company/Agate.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";

@@ -22,9 +22,6 @@ import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
 import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
 import wyscom from "./company/wyscom.png";
 import westfield from "./company/westfield.png";
 import agate from "./company/agate.png";
@@ -60,9 +57,6 @@ export {
   typescript,
   threejs,
   meta,
-  shopify,
-  starbucks,
-  tesla,
   carrent,
   jobit,
   tripguide,

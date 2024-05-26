@@ -20,6 +20,19 @@ import {
   wyscom,
   agate,
   westfield,
+  Azure,
+  CLI,
+  Duo,
+  GSuite,
+  Linux_OS,
+  M365,
+  MacOS,
+  Meraki,
+  TeamViewer,
+  ThreeCX,
+  Unifi,
+  VMWare,
+  WIndows_OS
 } from "../assets";
 
 export const navLinks = [
@@ -70,8 +83,8 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "Microsoft Azure",
+    icon: Azure,
   },
   {
     name: "CSS 3",

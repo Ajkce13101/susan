@@ -36,6 +36,14 @@ import CLI from "./tech/CLI.png";
 import Duo from "./tech/Duo.png";
 import GSuite from "./tech/GSuite.png";
 import Linux_OS from "./tech/Linux_OS.png";
+import M365 from "./tech/M365.png";
+import MacOS from "./tech/MacOS.png";
+import Meraki from "./tech/Meraki.png";
+import TeamViewer from "./tech/TeamViewer.png";
+import ThreeCX from "./tech/ThreeCX.png";
+import Unifi from "./tech/Unifi.png";
+import VMWare from "./tech/VMWare.png";
+import WIndows_OS from "./tech/WIndows_OS.png";
 
 export {
   logo,
@@ -72,4 +80,12 @@ export {
   Duo,
   GSuite,
   Linux_OS,
+  M365,
+  MacOS,
+  Meraki,
+  TeamViewer,
+  ThreeCX,
+  Unifi,
+  VMWare,
+  WIndows_OS
 };

@@ -26,11 +26,16 @@ import wyscom from "./company/wyscom.png";
 import westfield from "./company/westfield.png";
 import agate from "./company/Agate.png";
 
-import susanLogo from './logo.png'
-import susanLogoBlue from './logo-blue.png'
-import closeBlack from './closeBlack.png'
-import lottie from './lottie.json'
+import susanLogo from './logo.png';
+import susanLogoBlue from './logo-blue.png';
+import closeBlack from './closeBlack.png';
+import lottie from './lottie.json';
 
+import Azure from "./tech/Azure.png";
+import CLI from "./tech/CLI.png";
+import Duo from "./tech/Duo.png";
+import GSuite from "./tech/GSuite.png";
+import Linux_OS from "./tech/Linux_OS.png";
 
 export {
   logo,
@@ -62,4 +67,9 @@ export {
   wyscom,
   westfield,
   agate,
+  Azure,
+  CLI,
+  Duo,
+  GSuite,
+  Linux_OS,
 };

@@ -92,23 +92,27 @@ const Tech = () => {
           <div>
             <motion.div variants={listvariants} className="flex gap-4 mb-4">
               <VerifiedIcon color="primary"></VerifiedIcon>
-              <p>Ticketing Systems</p>
+              <p>Computer Systems and Networking</p>
             </motion.div>
             <motion.div variants={listvariants} className="flex gap-4 mb-4">
               <VerifiedIcon color="primary"></VerifiedIcon>
-              <p> Azure Active Directory (Azure AD)</p>
+              <p> Windows Server and services</p>
             </motion.div>
             <motion.div variants={listvariants} className="flex gap-4 mb-4">
               <VerifiedIcon color="primary"></VerifiedIcon>
-              <p>Remote Desktop Software</p>
+              <p>Remote Support and Services</p>
             </motion.div>
             <motion.div variants={listvariants} className="flex gap-4 mb-4">
               <VerifiedIcon color="primary"></VerifiedIcon>
-              <p>Remote Access and VPN</p>
+              <p>Troubleshooting and resolving issues</p>
             </motion.div>
             <motion.div variants={listvariants} className="flex gap-4 mb-4">
               <VerifiedIcon color="primary"></VerifiedIcon>
               <p>Mobile Device Management (MDM) Solutions</p>
+            </motion.div>
+            <motion.div variants={listvariants} className="flex gap-4 mb-4">
+              <VerifiedIcon color="primary"></VerifiedIcon>
+              <p>Command Line Interface</p>
             </motion.div>
           </div>
         </div>

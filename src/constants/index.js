@@ -19,7 +19,7 @@ import {
   ThreeCX,
   Unifi,
   VMWare,
-  WIndows_OS
+  Windows_OS
 } from "../assets";
 
 export const navLinks = [
@@ -119,7 +119,7 @@ const technologies = [
   },
   {
     name: "Windows OS",
-    icon: WIndows_OS,
+    icon: Windows_OS,
   },
 ];
 

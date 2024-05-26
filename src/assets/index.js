@@ -43,7 +43,7 @@ import TeamViewer from "./tech/TeamViewer.png";
 import ThreeCX from "./tech/ThreeCX.png";
 import Unifi from "./tech/Unifi.png";
 import VMWare from "./tech/VMWare.png";
-import WIndows_OS from "./tech/WIndows_OS.png";
+import Windows_OS from "./tech/Windows_OS.png";
 
 export {
   logo,
@@ -87,5 +87,5 @@ export {
   ThreeCX,
   Unifi,
   VMWare,
-  WIndows_OS
+  Windows_OS
 };

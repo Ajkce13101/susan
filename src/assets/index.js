@@ -26,7 +26,6 @@ import wyscom from "./company/wyscom.png";
 import westfield from "./company/westfield.png";
 import agate from "./company/Agate.png";
 
-import tripguide from "./tripguide.png";
 import susanLogo from './logo.png'
 import susanLogoBlue from './logo-blue.png'
 import closeBlack from './closeBlack.png'
@@ -56,9 +55,6 @@ export {
   typescript,
   threejs,
   meta,
-  carrent,
-  jobit,
-  tripguide,
   susanLogo,
   lottie,
   susanLogoBlue,

@@ -142,7 +142,7 @@ function Education() {
             <div className="educational-qualification" ref={edu2}>
               <div className="content">
                 <h3 className="qualification">
-                  Bacheolor of Information Technology
+                  Bachelor of Information Technology
                 </h3>
                 <button className="button">2021 - 2022</button>
                 <span>Educational Institute: </span>

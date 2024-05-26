@@ -154,7 +154,7 @@ const experiences = [
     ],
   },
   {
-    title: "IT Helpdesk Support",
+    title: "IT Technician",
     company_name: "Agate IT",
     icon: agate,
     iconBg: "#383E56",

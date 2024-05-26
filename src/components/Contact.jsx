@@ -121,7 +121,7 @@ const Contact = () => {
                   {...register("name", { required: true, minLength: 3 })}
                 />
                 {errors.name?.type === "required" && (
-                  <span>Name should be longer than 2</span>
+                  <span>Name should be longer than 2 Words</span>
                 )}
               </div>
 

@@ -114,7 +114,7 @@ const technologies = [
     icon: Unifi,
   },
   {
-    name: "VMWare Products",
+    name: "VMWare ESXi, vSphere",
     icon: VMWare,
   },
   {

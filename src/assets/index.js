@@ -26,13 +26,12 @@ import wyscom from "./company/wyscom.png";
 import westfield from "./company/westfield.png";
 import agate from "./company/Agate.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import susanLogo from './logo.png'
 import susanLogoBlue from './logo-blue.png'
 import closeBlack from './closeBlack.png'
 import lottie from './lottie.json'
+
 
 export {
   logo,

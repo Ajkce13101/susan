@@ -16,9 +16,6 @@ import {
   figma,
   docker,
   meta,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   wyscom,
   agate,
@@ -131,13 +128,13 @@ const experiences = [
     title: "Technical Support Officer",
     company_name: "WYSCOM",
     icon: wyscom,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "November 2023 - Present",
     points: [
       "Providing technical assistance and support to customers experiencing issues with products or services via phone, email, or chat.",
-      " Identifying and diagnosing technical problems, investigating root causes, and offering solutions or workarounds to resolve issues efficiently.",
+      "Identifying and diagnosing technical problems, investigating root causes, and offering solutions or workarounds to resolve issues efficiently.",
       "Using remote access tools to troubleshoot and resolve technical issues on customers' devices, ensuring minimal disruption to their workflow.",
-      " Documenting technical issues, solutions, and troubleshooting procedures for future reference and knowledge sharing within the team.",
+      "Documenting technical issues, solutions, and troubleshooting procedures for future reference and knowledge sharing within the team.",
     ],
   },
   {
@@ -151,18 +148,24 @@ const experiences = [
       "Acting as a liaison between customers and mall management/security, relaying announcements or safety information as needed.",
       "Providing valet parking services to customers by safely parking and retrieving their vehicles upon request.",
       "Collecting parking fees, issuing tickets, and processing payments accurately and efficiently.",
+      "Utilized strong communication skills to greet and assist customers, answer inquiries about stores, promotions, and services, and provide clear directions within the shopping center.",
+      "Worked collaboratively with a diverse team of concierge and valet parking professionals, ensuring smooth operations and excellent service delivery.",
     ],
   },
   {
     title: "IT Technician",
     company_name: "Agate IT",
     icon: agate,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "October 2022 - July 2023",
     points: [
-      " Providing technical as well as customer support to team members and external clients via phone, email, and remote connection, as well as ticketing system.",
-      "Troubleshooting Windows 10 issues including admin password recovery, system recovery, software issue, applications, licensing, BSOD, windows backup and restore, recovery, update, and upgrade",
-      "Troubleshooting Windows 10 issues including admin password recovery, system recovery, software issue, applications, licensing, BSOD, windows backup and restore, recovery, update, and upgrade.",
+      "Configured switches and routers through Web GUI and  terminal, following documentation. Installed them in server racks, connected and initialized equipment.",
+      "Created new instance of Unifi Cloud Controller in an Ubuntu server and adding/setting up new Access Points in the controller. ",
+      "Changed NIC cards on servers to increase the fast data transfer and updating firmwares and software updates of iDrac and ILO.",
+      "Completed project of connecting two distinct LANs using OPNSense and ZeroTier software.",
+      "Worked with various router and switch peripherals such as Juniper SSG140, SSG550, TPLink, HP, HPE, Dell.",
+      "Installing VMWare ESXI 6.0, 6.5 and 6.7 on the servers and creating Virtual Machine instances.",
+      "Hot Swapping faulty module of HP Switch and successfully installing &  configuring ports/Vlans.",
     ],
   },
   {
@@ -179,98 +182,4 @@ const experiences = [
     ],
   },
 ];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
-
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences};
